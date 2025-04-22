@@ -1,93 +1,128 @@
 import requests
 import re
 from bs4 import BeautifulSoup
+from datetime import datetime
+import math
 
 
 def get_bond_data(ticker):
-    base_url = "https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities/{}.json"
-    url = base_url.format(ticker)
-
-    response = requests.get(url)
-    if response.status_code != 200:
-        raise Exception(f"Ошибка при запросе данных: {response.status_code}")
-
-    data = response.json()
-
-    securities_data = data.get('securities', {}).get('data', [])
-    securities_columns = data.get('securities', {}).get('columns', [])
-    marketdata_data = data.get('marketdata', {}).get('data', [])
-    marketdata_columns = data.get('marketdata', {}).get('columns', [])
-
-    def get_value(columns, data_list, field):
-        if field in columns:
-            index = columns.index(field)
-            return data_list[0][index] if data_list and data_list[0][index] is not None else None
-        return None
-
+    headers = {'User-Agent': 'Mozilla/5.0'}
     bond_info = {
         'Тикер': ticker,
-        'Название': get_value(securities_columns, securities_data, 'SHORTNAME'),
-        'Дата погашения': get_value(securities_columns, securities_data, 'MATDATE'),
-        'Размер купона': get_value(securities_columns, securities_data, 'COUPONVALUE'),
+        'Название': None,
+        'Дата погашения': None,
+        'Размер купона': None,
         'Частота выплат купонов в год': None,
-        'Текущая цена': get_value(marketdata_columns, marketdata_data, 'LAST'),
-        'Доходность к погашению (%)': get_value(marketdata_columns, marketdata_data, 'YIELD')
+        'Текущая цена': None,
+        'Доходность к погашению (%)': None
     }
 
-    coupon_period = get_value(securities_columns, securities_data, 'COUPONPERIOD')
-    if coupon_period:
-        try:
-            bond_info['Частота выплат купонов в год'] = round(365 / int(coupon_period))
-        except ValueError:
-            bond_info['Частота выплат купонов в год'] = None
+    # Получение данных с MOEX
+    try:
+        url = f"https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities/{ticker}.json"
+        r = requests.get(url, headers=headers, timeout=10)
+        if r.status_code == 200:
+            d = r.json()
+            sec_data = d.get('securities', {}).get('data', [])
+            sec_cols = d.get('securities', {}).get('columns', [])
+            mkt_data = d.get('marketdata', {}).get('data', [])
+            mkt_cols = d.get('marketdata', {}).get('columns', [])
 
-    # Если данные отсутствуют, парсим Smart-Lab
-    smart_lab_url = f"https://smart-lab.ru/q/bonds/{ticker}/"
-    response = requests.get(smart_lab_url)
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.text, 'html.parser')
-        text = soup.get_text()
+            def gv(cols, data, key):
+                return data[0][cols.index(key)] if data and key in cols and data[0][cols.index(key)] is not None else None
 
-        # Название облигации
-        name_match = re.search(r"Имя облигации\s*(.*?)\s", text)
-        if bond_info['Название'] is None and name_match:
-            bond_info['Название'] = name_match.group(1).strip()
+            bond_info['Название'] = gv(sec_cols, sec_data, 'SHORTNAME')
+            bond_info['Дата погашения'] = gv(sec_cols, sec_data, 'MATDATE')
+            bond_info['Размер купона'] = gv(sec_cols, sec_data, 'COUPONVALUE')
+            bond_info['Текущая цена'] = gv(mkt_cols, mkt_data, 'LAST')
+            bond_info['Доходность к погашению (%)'] = gv(mkt_cols, mkt_data, 'YIELD')
 
-        # Дата погашения
-        maturity_match = re.search(r"Дата погашения\s*(\d{2}-\d{2}-\d{4})", text)
-        if bond_info['Дата погашения'] is None and maturity_match:
-            bond_info['Дата погашения'] = maturity_match.group(1)
+            coupon_period = gv(sec_cols, sec_data, 'COUPONPERIOD')
+            if coupon_period:
+                try:
+                    bond_info['Частота выплат купонов в год'] = round(365 / int(coupon_period))
+                except:
+                    pass
+    except Exception as e:
+        print(f"Ошибка при получении данных с MOEX для {ticker}: {e}")
 
-        # Текущая цена
-        price_match = re.search(r"Облигация .*? стоит сейчас ([\d,.]+) руб", text)
-        if bond_info['Текущая цена'] is None and price_match:
-            bond_info['Текущая цена'] = float(price_match.group(1).replace(',', '.'))
+    # Парсинг smart-lab при недостающих данных
+    try:
+        smart_lab_url = f"https://smart-lab.ru/q/bonds/{ticker}/"
+        r = requests.get(smart_lab_url, headers=headers, timeout=10)
+        if r.status_code == 200:
+            soup = BeautifulSoup(r.text, 'html.parser')
+            text = soup.get_text()
 
-        # Доходность к погашению
-        yield_match = re.search(r"Доходность\* облигации к погашению составляет ([\d,.]+)%", text)
-        if bond_info['Доходность к погашению (%)'] is None and yield_match:
-            bond_info['Доходность к погашению (%)'] = float(yield_match.group(1).replace(',', '.'))
+            def extract(pattern, cast=float):
+                match = re.search(pattern, text)
+                if match:
+                    value = match.group(1).replace(',', '.')
+                    try:
+                        return cast(value)
+                    except:
+                        return None
+                return None
 
-        # Размер купона
-        coupon_match = re.search(r"Купон, руб \(\?\)\s*([\d,.]+)", text)
-        if bond_info['Размер купона'] is None and coupon_match:
-            bond_info['Размер купона'] = float(coupon_match.group(1).replace(',', '.'))
+            # Всегда пытаемся извлечь данные, если они отсутствуют
+            if bond_info['Название'] is None:
+                name_match = re.search(r"Имя облигации\s*(.*?)\s", text)
+                if name_match:
+                    bond_info['Название'] = name_match.group(1).strip()
 
-        # Частота выплат купонов
-        freq_match = re.search(r"Частота купона, раз в год\s*([\d,.]+)", text)
-        if bond_info['Частота выплат купонов в год'] is None and freq_match:
-            bond_info['Частота выплат купонов в год'] = round(float(freq_match.group(1)))
+            bond_info['Дата погашения'] = bond_info['Дата погашения'] or extract(r"Дата погашения\s*(\d{2}-\d{2}-\d{4})", str)
+            bond_info['Размер купона'] = bond_info['Размер купона'] or extract(r"Купон, руб \(\?\)\s*([\d,.]+)")
+            bond_info['Частота выплат купонов в год'] = bond_info['Частота выплат купонов в год'] or extract(r"Частота купона, раз в год\s*([\d,.]+)", float)
+            bond_info['Доходность к погашению (%)'] = bond_info['Доходность к погашению (%)'] or extract(r"Доходность\* облигации к погашению составляет\s*([\d,.]+)", float)
+            bond_info['Текущая цена'] = bond_info['Текущая цена'] or extract(r"Облигация .*? стоит сейчас\s*([\d,.]+)", float)
+    except Exception as e:
+        print(f"Ошибка при парсинге smart-lab для {ticker}: {e}")
+
+    # Расчёт доходности при отсутствии
+    try:
+        if bond_info['Доходность к погашению (%)'] is None:
+            if bond_info['Размер купона'] == 0:
+                bond_info['Доходность к погашению (%)'] = 0.0
+            elif (bond_info['Размер купона'] and
+                  bond_info['Частота выплат купонов в год'] and
+                  bond_info['Текущая цена'] and
+                  bond_info['Дата погашения']):
+                C = float(bond_info['Размер купона'])
+                f = float(bond_info['Частота выплат купонов в год'])
+                P = float(bond_info['Текущая цена'])
+                N = 1000  # номинал
+                today = datetime.today()
+
+                try:
+                    maturity = datetime.strptime(bond_info['Дата погашения'], "%d-%m-%Y")
+                except ValueError:
+                    maturity = datetime.strptime(bond_info['Дата погашения'], "%Y-%m-%d")
+
+                years = max((maturity - today).days / 365.25, 0.1)
+                n = int(f * years)
+
+                def ytm_objective(r):
+                    return sum(C / (1 + r / f) ** i for i in range(1, n + 1)) + N / (1 + r / f) ** n - P
+
+                low, high = 0.0001, 1.0
+                for _ in range(100):
+                    mid = (low + high) / 2
+                    value = ytm_objective(mid)
+                    if abs(value) < 1e-4:
+                        break
+                    if value > 0:
+                        low = mid
+                    else:
+                        high = mid
+
+                bond_info['Доходность к погашению (%)'] = round(mid * 100, 2)
+    except Exception as e:
+        print(f"Ошибка при численном расчёте доходности для {ticker}: {e}")
 
     return bond_info
 
-
 def get_stock_data_moex(ticker):
     headers = {'User-Agent': 'Mozilla/5.0'}
-
-    # --- Получаем данные о бумаге ---
-    api_url = f"https://iss.moex.com/iss/engines/stock/markets/shares/securities/{ticker}.json"
-    response = requests.get(api_url, headers=headers, timeout=10)
-
     stock_info = {
         'Тикер': ticker,
         'Название': None,
@@ -96,57 +131,107 @@ def get_stock_data_moex(ticker):
         'Размер дивиденда': 0.0,
         'Частота выплат дивидендов в год': 0,
         'Доходность (%)': None,
-        'CAGR (%)': None  # Среднегодовая доходность
+        'CAGR (%)': None
     }
 
-    if response.status_code == 200:
-        data = response.json()
-        columns = data["securities"]["columns"]
-        values = data["securities"]["data"]
+    max_price = None
+    min_price = None
 
-        if values:
-            stock_data = dict(zip(columns, values[0]))
+    try:
+        # --- API MOEX: Название и marketdata ---
+        info_url = f"https://iss.moex.com/iss/engines/stock/markets/shares/securities/{ticker}.json"
+        r = requests.get(info_url, headers=headers, timeout=10)
+        if r.status_code == 200:
+            data = r.json()
+            cols = data["securities"]["columns"]
+            vals = data["securities"]["data"]
+            if vals:
+                d = dict(zip(cols, vals[0]))
+                stock_info['Название'] = d.get("SECNAME", "Неизвестно")
 
-            stock_info['Название'] = stock_data.get("SECNAME", "Неизвестно")
-            stock_info['Стоимость'] = stock_data.get("PREVPRICE", None)  # Предыдущая цена закрытия
-            stock_info['Доходность (%)'] = stock_data.get("YIELD", None)  # Доходность из API
+        # --- Цена (LAST) ---
+        price_url = f"https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities/{ticker}.json"
+        r = requests.get(price_url, headers=headers, timeout=10)
+        if r.status_code == 200:
+            data = r.json()
+            cols = data["marketdata"]["columns"]
+            vals = data["marketdata"]["data"]
+            if vals:
+                d = dict(zip(cols, vals[0]))
+                stock_info['Стоимость'] = d.get("LAST")
+                max_price = d.get("HIGH")
+                min_price = d.get("LOW")
 
-    # --- Получаем данные о дивидендах ---
-    div_url = f"https://iss.moex.com/iss/securities/{ticker}/dividends.json"
-    div_response = requests.get(div_url, headers=headers, timeout=10)
+        # --- Последний дивиденд ---
+        div_url = f"https://iss.moex.com/iss/securities/{ticker}/dividends.json"
+        r = requests.get(div_url, headers=headers, timeout=10)
+        if r.status_code == 200:
+            data = r.json()
+            cols = data["dividends"]["columns"]
+            vals = data["dividends"]["data"]
+            if vals:
+                last_div = vals[0][cols.index("value")]
+                stock_info['Наличие дивидендов'] = "Да"
+                stock_info['Размер дивиденда'] = last_div
+                stock_info['Частота выплат дивидендов в год'] = 1
+            else:
+                stock_info['Размер дивиденда'] = 0.0
+                stock_info['Частота выплат дивидендов в год'] = 0
 
-    if div_response.status_code == 200:
-        div_data = div_response.json()
-        div_columns = div_data["dividends"]["columns"]
-        div_values = div_data["dividends"]["data"]
+    except Exception as e:
+        print(f"Ошибка при запросе API MOEX для {ticker}: {e}")
 
-        if div_values:
-            dividends = [row[div_columns.index("value")] for row in div_values]
-            stock_info['Наличие дивидендов'] = "Да"
-            stock_info['Размер дивиденда'] = sum(dividends)
-            stock_info['Частота выплат дивидендов в год'] = len(dividends)
+    # --- Парсинг BCS ---
+    if (stock_info['Стоимость'] is None or stock_info['Размер дивиденда'] == 0 or max_price is None or min_price is None):
+        try:
+            bcs_url = f"https://bcs.ru/markets/{ticker.lower()}/tqbr"
+            r = requests.get(bcs_url, headers=headers, timeout=10)
+            if r.status_code == 200:
+                soup = BeautifulSoup(r.text, 'html.parser')
+                text = soup.get_text(" ", strip=True)
 
-    # --- Получаем цену акции год назад ---
-    history_url = f"https://iss.moex.com/iss/history/engines/stock/markets/shares/securities/{ticker}.json?period=year"
-    history_response = requests.get(history_url, headers=headers, timeout=10)
+                def extract(pattern, cast=float):
+                    match = re.search(pattern, text)
+                    if match:
+                        try:
+                            return cast(match.group(1).replace(',', '.').replace(' ', ''))
+                        except:
+                            return None
+                    return None
 
-    if history_response.status_code == 200:
-        history_data = history_response.json()
-        history_columns = history_data["history"]["columns"]
-        history_values = history_data["history"]["data"]
+                # Цена
+                if stock_info['Стоимость'] is None:
+                    stock_info['Стоимость'] = extract(r"Стоимость\s+[A-Z]+\s+на\s+\d{2}\.\d{2}\.\d{4}\s*—\s*([\d\s,.]+)")
 
-        if history_values:
-            price_year_ago = history_values[0][history_columns.index("CLOSE")]  # Цена закрытия год назад
+                # Дивиденды
+                if stock_info['Размер дивиденда'] == 0:
+                    stock_info['Размер дивиденда'] = extract(r"Дивиденды\s+([\d\s,.]+)")
+                    if stock_info['Размер дивиденда']:
+                        stock_info['Наличие дивидендов'] = "Да"
+                        stock_info['Частота выплат дивидендов в год'] = 1
+                    else:
+                        stock_info['Наличие дивидендов'] = "Нет"
+                        stock_info['Размер дивиденда'] = 0.0
+                        stock_info['Частота выплат дивидендов в год'] = 0
 
-            if price_year_ago and stock_info['Стоимость']:
-                # --- Расчёт доходности за счёт изменения цены ---
-                price_growth_yield = ((stock_info['Стоимость'] - price_year_ago) / price_year_ago) * 100
+                # Максимум и минимум
+                if max_price is None:
+                    max_price = extract(r"максимальная цена\s*—\s*([\d\s,.]+)")
 
-                # --- Если нет дивидендов, используем доходность роста цены ---
-                if stock_info['Доходность (%)'] is None:
-                    stock_info['Доходность (%)'] = round(price_growth_yield, 2)
+                if min_price is None:
+                    min_price = extract(r"минимальная цена\s*—\s*([\d\s,.]+)")
 
-                # --- Расчёт среднегодовой доходности (CAGR) за 1 год ---
-                stock_info['CAGR (%)'] = round(((stock_info['Стоимость'] / price_year_ago) ** (1 / 1) - 1) * 100, 2)
+        except Exception as e:
+            print(f"Ошибка при парсинге BCS для {ticker}: {e}")
+
+    # --- Расчёт доходности ---
+    try:
+        if stock_info['Размер дивиденда'] > 0 and stock_info['Стоимость']:
+            stock_info['Доходность (%)'] = round((stock_info['Размер дивиденда'] / stock_info['Стоимость']) * 100, 2)
+        elif max_price and min_price and min_price > 0:
+            growth = ((max_price - min_price) / min_price) * 100
+            stock_info['Доходность (%)'] = round(growth, 2)
+    except Exception as e:
+        print(f"Ошибка при расчёте доходности {ticker}: {e}")
 
     return stock_info

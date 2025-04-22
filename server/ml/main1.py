@@ -65,11 +65,23 @@ def test_model(model, test_data):
 
 
 def select_securities(risk_level, securities_data):
+    def is_valid_security(security):
+        return all(value is not None for value in security.values())
+
     risk_categories = ["Low", "Medium", "High"]
     category = risk_categories[risk_level]
-    selection = {"Bonds": securities_data[category].get("Bonds", [])[:10],
-                 "Stocks": securities_data[category].get("Stocks", [])[:10]}
-    return selection
+
+    valid_bonds = [bond for bond in securities_data[category].get("Bonds", []) if is_valid_security(bond)]
+    valid_stocks = [stock for stock in securities_data[category].get("Stocks", []) if is_valid_security(stock)]
+
+    # --- Перемешивание ---
+    random.shuffle(valid_bonds)
+    random.shuffle(valid_stocks)
+
+    return {
+        "Bonds": valid_bonds[:10],
+        "Stocks": valid_stocks[:10]
+    }
 
 
 def calculate_expected_return(selection, weighted=False):
@@ -122,7 +134,7 @@ def main(user_answers_path, securities_path, output_path):
     ]
 
     model = RiskEvaluationNN()
-    model.load_state_dict(torch.load('ml/user_risk_model.pth'))
+    model.load_state_dict(torch.load('user_risk_model.pth'))
     model.eval()
 
     user_input_tensor = torch.tensor([user_input], dtype=torch.float32)
@@ -156,14 +168,14 @@ if __name__ == "__main__":
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
     train_model(model, criterion, optimizer, X_train, y_train)
-    torch.save(model.state_dict(), 'ml/user_risk_model.pth')
+    torch.save(model.state_dict(), 'user_risk_model.pth')
     print("Модель обучена и сохранена в user_risk_model.pth")
 
     test_data = generate_training_data(num_samples=200)
     test_model(model, test_data)
 
-    user_answers_path = 'ml/user_answers.json'
-    securities_path = 'ml/risk_assessment.json'
-    output_path = 'ml/selected_securities.json'
+    user_answers_path = 'user_answers.json'
+    securities_path = 'risk_assessment.json'
+    output_path = 'selected_securities.json'
 
     main(user_answers_path, securities_path, output_path)

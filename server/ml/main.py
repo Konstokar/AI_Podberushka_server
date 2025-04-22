@@ -27,76 +27,11 @@ def get_data(url):
         print(f"Ошибка при выполнении запроса: {e}")
         return None
 
-
-def get_prices(data, tickers, is_stock=True):
-    base_url = ("https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities/"
-                if is_stock
-                else "https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQOB/securities/")
-
-    prices = {}
-    time.sleep(0.5)
-
-    with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
-        futures = {executor.submit(requests.get, base_url + f"{ticker}.json"): ticker for ticker in tickers}
-
-        for future in concurrent.futures.as_completed(futures):
-            ticker = futures[future]
-            try:
-                response = future.result()
-                if response.status_code == 200:
-                    data = response.json()
-                    marketdata = data.get('marketdata', {})
-                    columns = marketdata.get('columns', [])
-                    values = marketdata.get('data', [])
-
-                    try:
-                        last_index = columns.index("LAST")
-                    except ValueError:
-                        last_index = None
-                    try:
-                        close_index = columns.index("CLOSEPRICE")
-                    except ValueError:
-                        close_index = None
-                    try:
-                        wap_index = columns.index("WAPRICE")
-                    except ValueError:
-                        wap_index = None
-                    try:
-                        market_index = columns.index("MARKETPRICE")
-                    except ValueError:
-                        market_index = None
-
-                    if values:
-                        last_price = None
-                        for item in values:
-                            if last_index is not None and len(item) > last_index and item[last_index] is not None:
-                                last_price = item[last_index]
-                                break
-                            if close_index is not None and len(item) > close_index and item[close_index] is not None:
-                                last_price = item[close_index]
-                                break
-                            if wap_index is not None and len(item) > wap_index and item[wap_index] is not None:
-                                last_price = item[wap_index]
-                                break
-                            if market_index is not None and len(item) > market_index and item[market_index] is not None:
-                                last_price = item[market_index]
-                                break
-
-                        prices[ticker] = last_price if last_price is not None else "Цена не найдена"
-                    else:
-                        prices[ticker] = "Цена не найдена"
-                else:
-                    prices[ticker] = "Ошибка запроса"
-            except Exception as e:
-                prices[ticker] = f"Ошибка: {e}"
-    return prices
-
-
 def extract_stock_data(data):
     stocks = data.get('securities', {}).get('data', [])
     stock_info = []
 
-    for stock in stocks[:50]:
+    for stock in stocks[:100]:
         ticker = stock[0] if len(stock) > 0 else "Нет данных"
         print(ticker)
 
@@ -126,7 +61,7 @@ def extract_bond_data(data):
     bonds = data.get('securities', {}).get('data', [])
     bond_info = []
 
-    for bond in bonds[:50]:
+    for bond in bonds[:100]:
         ticker = bond[0] if len(bond) > 0 else "Нет данных"
         print(ticker)
 
@@ -147,7 +82,6 @@ def extract_bond_data(data):
             'annual_return': bond_details['Доходность к погашению (%)'],
             'price': bond_details['Текущая цена']
         })
-
     return bond_info
 
 
@@ -199,8 +133,8 @@ stocks_data = get_data(stocks_url)
 bonds_data = get_data(bonds_url)
 
 random.seed(42)
-stock_info = random.sample(extract_stock_data(stocks_data), min(50, len(stocks_data['securities']['data'])))
-bond_info = random.sample(extract_bond_data(bonds_data), min(50, len(bonds_data['securities']['data'])))
+stock_info = random.sample(extract_stock_data(stocks_data), min(100, len(stocks_data['securities']['data'])))
+bond_info = random.sample(extract_bond_data(bonds_data), min(100, len(bonds_data['securities']['data'])))
 
 X_train, y_train = prepare_data(stock_info, bond_info)
 model = RiskClassifier()
@@ -229,12 +163,6 @@ def predict_and_save_results(model, stock_data, bond_data):
     stock_predictions = []
     bond_predictions = []
 
-    stock_tickers = [stock['ticker'] for stock in stock_data]
-    bond_tickers = [bond['ticker'] for bond in bond_data]
-
-    stock_prices = get_prices(stock_data, stock_tickers, is_stock=True)
-    bond_prices = get_prices(bond_data, bond_tickers, is_stock=False)
-
     for stock in stock_data:
         try:
             dividend_yield = float(stock['dividend']['yield'])
@@ -243,7 +171,6 @@ def predict_and_save_results(model, stock_data, bond_data):
         input_data = torch.tensor([[0, dividend_yield]], dtype=torch.float32)
         output = model(input_data)
         risk_level = torch.argmax(output, dim=1).item()
-        stock['price'] = stock_prices.get(stock['ticker'], "Нет данных")
         stock_predictions.append((stock, risk_level))
 
     for bond in bond_data:
@@ -252,7 +179,6 @@ def predict_and_save_results(model, stock_data, bond_data):
         input_data = torch.tensor([[0, credit_rating]], dtype=torch.float32)
         output = model(input_data)
         risk_level = torch.argmax(output, dim=1).item()
-        bond['price'] = bond_prices.get(bond['ticker'], "Нет данных")
         bond_predictions.append((bond, risk_level))
 
     result = {
