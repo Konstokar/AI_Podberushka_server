@@ -5,8 +5,8 @@ class MLService:
     @staticmethod
     def analyze_market():
         try:
-            result = subprocess.run(["python", "ml/main.py"], capture_output=True, text=True)
-            return json.loads(result.stdout)
+            with open("ml/risk_assessment.json", "r", encoding="utf-8") as f:
+                return json.load(f)
         except Exception as e:
             return {"error": str(e)}, 500
 

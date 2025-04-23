@@ -66,15 +66,22 @@ def test_model(model, test_data):
 
 def select_securities(risk_level, securities_data):
     def is_valid_security(security):
-        return all(value is not None for value in security.values())
+        # Проверка: все параметры не None и, если это облигация — купон > 0
+        if any(value is None for value in security.values()):
+            return False
+        if "coupon" in security:
+            coupon = security["coupon"]
+            return coupon and coupon.get("size", 0) > 0
+        return True
 
     risk_categories = ["Low", "Medium", "High"]
     category = risk_categories[risk_level]
 
+    # Фильтрация
     valid_bonds = [bond for bond in securities_data[category].get("Bonds", []) if is_valid_security(bond)]
     valid_stocks = [stock for stock in securities_data[category].get("Stocks", []) if is_valid_security(stock)]
 
-    # --- Перемешивание ---
+    # Перемешивание
     random.shuffle(valid_bonds)
     random.shuffle(valid_stocks)
 
@@ -160,6 +167,7 @@ def load_json(file_path):
 
 
 if __name__ == "__main__":
+    print("Запуск генераци подборки пошёл")
     training_data = generate_training_data()
     X_train, y_train = prepare_training_data(training_data)
 
@@ -174,8 +182,8 @@ if __name__ == "__main__":
     test_data = generate_training_data(num_samples=200)
     test_model(model, test_data)
 
-    user_answers_path = 'user_answers.json'
-    securities_path = 'risk_assessment.json'
-    output_path = 'selected_securities.json'
+    user_answers_path = 'ml/user_answers.json'
+    securities_path = 'ml/risk_assessment.json'
+    output_path = 'ml/selected_securities.json'
 
     main(user_answers_path, securities_path, output_path)

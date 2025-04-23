@@ -1,12 +1,8 @@
-import re
-import time
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import requests
 import json
-import concurrent.futures
 import random
 
 from external_data import get_bond_data, get_stock_data_moex
@@ -31,7 +27,7 @@ def extract_stock_data(data):
     stocks = data.get('securities', {}).get('data', [])
     stock_info = []
 
-    for stock in stocks[:100]:
+    for stock in stocks[:50]:
         ticker = stock[0] if len(stock) > 0 else "Нет данных"
         print(ticker)
 
@@ -61,7 +57,7 @@ def extract_bond_data(data):
     bonds = data.get('securities', {}).get('data', [])
     bond_info = []
 
-    for bond in bonds[:100]:
+    for bond in bonds[:50]:
         ticker = bond[0] if len(bond) > 0 else "Нет данных"
         print(ticker)
 
@@ -128,20 +124,6 @@ def prepare_data(stock_data, bond_data):
 
     return torch.tensor(X, dtype=torch.float32), torch.tensor(y, dtype=torch.long)
 
-
-stocks_data = get_data(stocks_url)
-bonds_data = get_data(bonds_url)
-
-random.seed(42)
-stock_info = random.sample(extract_stock_data(stocks_data), min(100, len(stocks_data['securities']['data'])))
-bond_info = random.sample(extract_bond_data(bonds_data), min(100, len(bonds_data['securities']['data'])))
-
-X_train, y_train = prepare_data(stock_info, bond_info)
-model = RiskClassifier()
-criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
-
-
 def train_model(model, criterion, optimizer, X_train, y_train, epochs=100):
     for epoch in range(epochs):
         optimizer.zero_grad()
@@ -152,60 +134,75 @@ def train_model(model, criterion, optimizer, X_train, y_train, epochs=100):
         if (epoch + 1) % 10 == 0:
             print(f"Epoch [{epoch + 1}/{epochs}], Loss: {loss.item():.4f}")
 
+def run_analysis():
+    print("Запуск анализа рынка пошёл")
+    stocks_data = get_data(stocks_url)
+    bonds_data = get_data(bonds_url)
 
-train_model(model, criterion, optimizer, X_train, y_train)
-torch.save(model.state_dict(), 'ml/risk_classifier_model.pth')
-print("Модель обучена и сохранена в risk_classifier_model.pth")
+    random.seed(42)
+    stock_info = random.sample(extract_stock_data(stocks_data), min(50, len(stocks_data['securities']['data'])))
+    bond_info = random.sample(extract_bond_data(bonds_data), min(50, len(bonds_data['securities']['data'])))
 
+    X_train, y_train = prepare_data(stock_info, bond_info)
+    model = RiskClassifier()
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-def predict_and_save_results(model, stock_data, bond_data):
-    model.eval()
-    stock_predictions = []
-    bond_predictions = []
+    train_model(model, criterion, optimizer, X_train, y_train)
+    torch.save(model.state_dict(), 'ml/risk_classifier_model.pth')
+    print("Модель обучена и сохранена в risk_classifier_model.pth")
 
-    for stock in stock_data:
-        try:
-            dividend_yield = float(stock['dividend']['yield'])
-        except (ValueError, TypeError):
-            dividend_yield = 0
-        input_data = torch.tensor([[0, dividend_yield]], dtype=torch.float32)
-        output = model(input_data)
-        risk_level = torch.argmax(output, dim=1).item()
-        stock_predictions.append((stock, risk_level))
+    def predict_and_save_results(model, stock_data, bond_data):
+        model.eval()
+        stock_predictions = []
+        bond_predictions = []
 
-    for bond in bond_data:
-        coupon_freq = bond['coupon']['frequency_per_year']
-        credit_rating = 1 if coupon_freq == "AAA" else 2 if coupon_freq == "AA" else 3
-        input_data = torch.tensor([[0, credit_rating]], dtype=torch.float32)
-        output = model(input_data)
-        risk_level = torch.argmax(output, dim=1).item()
-        bond_predictions.append((bond, risk_level))
+        for stock in stock_data:
+            try:
+                dividend_yield = float(stock['dividend']['yield'])
+            except (ValueError, TypeError):
+                dividend_yield = 0
+            input_data = torch.tensor([[0, dividend_yield]], dtype=torch.float32)
+            output = model(input_data)
+            risk_level = torch.argmax(output, dim=1).item()
+            stock_predictions.append((stock, risk_level))
 
-    result = {
-        "Low": {"Bonds": []},
-        "Medium": {"Stocks": [], "Bonds": []},
-        "High": {"Stocks": []}
-    }
+        for bond in bond_data:
+            coupon_freq = bond['coupon']['frequency_per_year']
+            credit_rating = 1 if coupon_freq == "AAA" else 2 if coupon_freq == "AA" else 3
+            input_data = torch.tensor([[0, credit_rating]], dtype=torch.float32)
+            output = model(input_data)
+            risk_level = torch.argmax(output, dim=1).item()
+            bond_predictions.append((bond, risk_level))
 
-    risk_map = {0: "Low", 1: "Medium", 2: "High"}
+        result = {
+            "Low": {"Bonds": []},
+            "Medium": {"Stocks": [], "Bonds": []},
+            "High": {"Stocks": []}
+        }
 
-    if len(result["Low"]["Bonds"]) == 0:
-        result["Low"]["Bonds"] = bond_info[:50]
+        risk_map = {0: "Low", 1: "Medium", 2: "High"}
 
-    if len(result["Medium"]["Stocks"]) == 0:
-        result["Medium"]["Stocks"] = stock_info[:50]
+        if len(result["Low"]["Bonds"]) == 0:
+            result["Low"]["Bonds"] = bond_info[:50]
 
-    if len(result["High"]["Stocks"]) == 0:
-        result["High"]["Stocks"] = stock_info[:50]
+        if len(result["Medium"]["Stocks"]) == 0:
+            result["Medium"]["Stocks"] = stock_info[:50]
 
-    for stock, risk_level in stock_predictions:
-        result[risk_map[risk_level]]["Stocks"].append(stock)
+        if len(result["High"]["Stocks"]) == 0:
+            result["High"]["Stocks"] = stock_info[:50]
 
-    for bond, risk_level in bond_predictions:
-        result[risk_map[risk_level]]["Bonds"].append(bond)
+        for stock, risk_level in stock_predictions:
+            result[risk_map[risk_level]]["Stocks"].append(stock)
 
-    with open('ml/risk_assessment.json', 'w') as f:
-        json.dump(result, f, indent=4, ensure_ascii=False)
-    print("Результаты сохранены в risk_assessment.json")
+        for bond, risk_level in bond_predictions:
+            result[risk_map[risk_level]]["Bonds"].append(bond)
 
-predict_and_save_results(model, stock_info, bond_info)
+        with open('ml/risk_assessment.json', 'w') as f:
+            json.dump(result, f, indent=4, ensure_ascii=False)
+        print("Результаты сохранены в risk_assessment.json")
+
+    predict_and_save_results(model, stock_info, bond_info)
+
+if __name__ == "__main__":
+    run_analysis()
