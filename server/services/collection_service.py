@@ -53,8 +53,6 @@ class CollectionService:
 
     @staticmethod
     def get_draft_collection():
-        subprocess.run(["python", "ml/main.py"])
-        time.sleep(2)
         subprocess.run(["python", "ml/main1.py"])
         time.sleep(2)
 

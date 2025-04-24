@@ -3,6 +3,7 @@ import json
 from flask import Blueprint, request, jsonify, session
 
 from services.ml_service import MLService
+from services.user_answer_service import UserAnswerService
 
 ml_bp = Blueprint("ml_bp", __name__)
 USER_ANSWERS_PATH = os.path.join("ml", "user_answers.json")
@@ -21,29 +22,32 @@ def analyze_market():
 
 @ml_bp.route("/generate_portfolio", methods=["POST"])
 def generate_portfolio():
-    data = request.json
-    market_data = data.get("market_data")
-    user_answers = data.get("user_answers")
+    try:
+        login = request.json.get("login")
+        if not UserAnswerService.dump_answers_to_file(login):
+            return jsonify({"error": "Ответы не найдены"}), 400
 
-    if not market_data or not user_answers:
-        return jsonify({"error": "Отсутствуют входные данные"}), 400
+        market_data = request.json.get("market_data")
+        if not market_data:
+            return jsonify({"error": "Отсутствуют данные рынка"}), 400
 
-    return jsonify(MLService.generate_portfolio(market_data, user_answers))
+        # user_answers будет прочитан внутри main1.py из файла user_answers.json
+        return jsonify(MLService.generate_portfolio(market_data, {}))
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 @ml_bp.route("/save_answers", methods=["POST"])
 def save_answers():
     try:
         data = request.json
-        if not isinstance(data, dict):
+        login = data.get("login")
+        answers = data.get("answers")
+
+        if not login or not isinstance(answers, dict):
             return jsonify({"error": "Неверный формат данных"}), 400
 
-        os.makedirs(os.path.dirname(USER_ANSWERS_PATH), exist_ok=True)
-
-        with open(USER_ANSWERS_PATH, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-
-        return jsonify({"message": "Ответы сохранены"}), 200
+        return UserAnswerService.save_user_answers(login, answers)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 

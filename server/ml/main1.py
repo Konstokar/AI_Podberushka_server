@@ -66,7 +66,6 @@ def test_model(model, test_data):
 
 def select_securities(risk_level, securities_data):
     def is_valid_security(security):
-        # Проверка: все параметры не None и, если это облигация — купон > 0
         if any(value is None for value in security.values()):
             return False
         if "coupon" in security:
@@ -77,9 +76,18 @@ def select_securities(risk_level, securities_data):
     risk_categories = ["Low", "Medium", "High"]
     category = risk_categories[risk_level]
 
-    # Фильтрация
-    valid_bonds = [bond for bond in securities_data[category].get("Bonds", []) if is_valid_security(bond)]
-    valid_stocks = [stock for stock in securities_data[category].get("Stocks", []) if is_valid_security(stock)]
+    # Безопасный доступ только к выбранной категории
+    selected_category = securities_data.get(category, {})
+
+    valid_bonds = [
+        bond for bond in selected_category.get("Bonds", [])
+        if is_valid_security(bond)
+    ]
+
+    valid_stocks = [
+        stock for stock in selected_category.get("Stocks", [])
+        if is_valid_security(stock)
+    ]
 
     # Перемешивание
     random.shuffle(valid_bonds)
@@ -185,5 +193,8 @@ if __name__ == "__main__":
     user_answers_path = 'ml/user_answers.json'
     securities_path = 'ml/risk_assessment.json'
     output_path = 'ml/selected_securities.json'
+
+    with open("ml/selected_securities.json", "w", encoding="utf-8") as f:
+        f.write("")
 
     main(user_answers_path, securities_path, output_path)
