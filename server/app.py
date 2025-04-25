@@ -1,3 +1,5 @@
+import json
+
 from dotenv import load_dotenv
 from flask import Flask, send_from_directory
 from flask_cors import CORS
@@ -9,8 +11,8 @@ from datetime import datetime, timedelta
 import subprocess, atexit
 
 from config import SECRET_KEY
+from models.risk_assessment_model import RiskAssessment
 
-# Подключение маршрутов
 from routes.user_routes import user_bp
 from routes.collection_routes import collection_bp
 from routes.ml_routes import ml_bp
@@ -30,20 +32,27 @@ app.register_blueprint(user_bp, url_prefix="/api/users")
 app.register_blueprint(collection_bp, url_prefix="/api/collections")
 app.register_blueprint(ml_bp, url_prefix="/api/ml")
 
-# --- Анализ рынка: функция запуска ---
 def run_market_analysis():
     print("[APScheduler] Запуск анализа рынка...")
     try:
         subprocess.run(["python", "ml/main.py"], check=True)
         print("[APScheduler] Анализ завершён")
+
     except subprocess.CalledProcessError as e:
         print(f"[APScheduler] Ошибка при запуске анализа рынка: {e}")
 
-# --- Планировщик ---
+def export_risk_assessment_to_file():
+    data = RiskAssessment.get()
+    if data:
+        with open("ml/risk_assessment.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+        print("[Init] Risk assessment выгружен из базы")
+    else:
+        print("[Init] Нет данных risk_assessment в базе")
+
 scheduler = BackgroundScheduler()
 scheduler.start()
 
-# Повторяющийся запуск каждый час
 scheduler.add_job(
     run_market_analysis,
     trigger=IntervalTrigger(hours=1),
@@ -51,11 +60,17 @@ scheduler.add_job(
     replace_existing=True
 )
 
-# Однократный запуск через 2 минуты после старта
 scheduler.add_job(
     run_market_analysis,
-    trigger=DateTrigger(run_date=datetime.now() + timedelta(minutes=2)),
+    trigger=DateTrigger(run_date=datetime.now() + timedelta(seconds=30)),
     id='initial_market_analysis',
+    replace_existing=True
+)
+
+scheduler.add_job(
+    export_risk_assessment_to_file,
+    trigger=DateTrigger(run_date=datetime.now() + timedelta(seconds=1)),
+    id='export_risk_assessment',
     replace_existing=True
 )
 

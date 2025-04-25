@@ -6,6 +6,7 @@ import json
 import random
 
 from external_data import get_bond_data, get_stock_data_moex
+from models.risk_assessment_model import RiskAssessment
 
 stocks_url = 'https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities.json'
 bonds_url = 'https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQOB/securities.json'
@@ -197,10 +198,10 @@ def run_analysis():
 
         for bond, risk_level in bond_predictions:
             result[risk_map[risk_level]]["Bonds"].append(bond)
-
         with open('ml/risk_assessment.json', 'w') as f:
             json.dump(result, f, indent=4, ensure_ascii=False)
-        print("Результаты сохранены в risk_assessment.json")
+        RiskAssessment.save(result)
+        print("Результаты сохранены в risk_assessment.json и базу данных")
 
     predict_and_save_results(model, stock_info, bond_info)
 
