@@ -10,7 +10,6 @@ USER_ANSWERS_PATH = os.path.join("ml", "user_answers.json")
 
 FILES_TO_CLEAR = [
     "ml/user_answers.json",
-    "ml/risk_assessment.json",
     "ml/selected_securities.json"
 ]
 
@@ -31,8 +30,9 @@ def generate_portfolio():
         if not market_data:
             return jsonify({"error": "Отсутствуют данные рынка"}), 400
 
-        # user_answers будет прочитан внутри main1.py из файла user_answers.json
-        return jsonify(MLService.generate_portfolio(market_data, {}))
+        portfolio_data = MLService.generate_portfolio(market_data, login)
+
+        return jsonify(portfolio_data)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
