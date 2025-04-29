@@ -1,3 +1,4 @@
+import bcrypt
 from bson import ObjectId
 from flask import Blueprint, request, jsonify
 from database import users_collection
@@ -77,3 +78,25 @@ def delete_user():
 
     login = data["login"]
     return UserService.delete_user(login)
+
+@user_bp.route("/reset_password", methods=["POST"])
+def reset_password():
+    data = request.json
+    login = data.get("login")
+    new_password = data.get("new_password")
+    confirm_password = data.get("confirm_password")
+
+    if not login or not new_password or not confirm_password:
+        return jsonify({"error": "Все поля обязательны"}), 400
+
+    if new_password != confirm_password:
+        return jsonify({"error": "Пароли не совпадают"}), 400
+
+    user = users_collection.find_one({"login": login})
+    if not user:
+        return jsonify({"error": "Пользователь не найден"}), 404
+
+    hashed_password = bcrypt.hashpw(new_password.encode("utf-8"), bcrypt.gensalt())
+    users_collection.update_one({"login": login}, {"$set": {"password": hashed_password.decode("utf-8")}})
+
+    return jsonify({"message": "Пароль успешно изменён"}), 200
