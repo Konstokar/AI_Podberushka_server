@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Blueprint, request, jsonify, session
+from flask import Blueprint, request, jsonify
 
 from services.ml_service import MLService
 from services.user_answer_service import UserAnswerService

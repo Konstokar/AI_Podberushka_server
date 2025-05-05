@@ -1,9 +1,6 @@
 import subprocess
 import json
 
-from models.draft_collection_model import DraftCollection
-
-
 class MLService:
     @staticmethod
     def analyze_market():

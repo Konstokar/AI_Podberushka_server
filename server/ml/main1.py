@@ -8,7 +8,7 @@ import random
 class RiskEvaluationNN(nn.Module):
     def __init__(self):
         super(RiskEvaluationNN, self).__init__()
-        self.fc1 = nn.Linear(4, 8)
+        self.fc1 = nn.Linear(5, 8)
         self.fc2 = nn.Linear(8, 4)
         self.fc3 = nn.Linear(4, 1)
         self.relu = nn.ReLU()
@@ -23,7 +23,7 @@ class RiskEvaluationNN(nn.Module):
 def generate_training_data(num_samples=1000):
     training_data = []
     for _ in range(num_samples):
-        answers = [random.randint(0, 4) for _ in range(4)]
+        answers = [random.randint(0, 5) for _ in range(5)]
         avg_answer = sum(answers) / len(answers)
 
         if avg_answer < 1.5:
@@ -76,7 +76,6 @@ def select_securities(risk_level, securities_data):
     risk_categories = ["Low", "Medium", "High"]
     category = risk_categories[risk_level]
 
-    # Безопасный доступ только к выбранной категории
     selected_category = securities_data.get(category, {})
 
     valid_bonds = [
@@ -89,7 +88,6 @@ def select_securities(risk_level, securities_data):
         if is_valid_security(stock)
     ]
 
-    # Перемешивание
     random.shuffle(valid_bonds)
     random.shuffle(valid_stocks)
 
@@ -105,8 +103,8 @@ def calculate_expected_return(selection, weighted=False):
     count = 0
 
     for bond in selection["Bonds"]:
-        r = bond.get("annual_return", 0) / 100  # Приводим к десятичной дроби (10% -> 0.1)
-        w = bond.get("price", 1)  # Цена в рублях
+        r = bond.get("annual_return", 0) / 100
+        w = bond.get("price", 1)
         if weighted:
             total_return += r * w
             total_weight += w
@@ -125,7 +123,7 @@ def calculate_expected_return(selection, weighted=False):
             count += 1
 
     if weighted and total_weight > 0:
-        return round((total_return / total_weight) * 100, 2)  # Преобразуем обратно в проценты
+        return round((total_return / total_weight) * 100, 2)
     elif count > 0:
         return round((total_return / count) * 100, 2)
     else:
@@ -145,7 +143,8 @@ def main(user_answers_path, securities_path, output_path):
         user_answers["question_1"]["answer_grade"],
         user_answers["question_2"]["answer_grade"],
         user_answers["question_3"]["answer_grade"],
-        user_answers["question_4"]["answer_grade"]
+        user_answers["question_4"]["answer_grade"],
+        user_answers["question_5"]["answer_grade"]
     ]
 
     model = RiskEvaluationNN()

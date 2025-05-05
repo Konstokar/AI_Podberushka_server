@@ -1,5 +1,4 @@
 import bcrypt
-from bson import ObjectId
 from flask import Blueprint, request, jsonify
 from database import users_collection
 from services.user_service import UserService

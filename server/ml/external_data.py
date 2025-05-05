@@ -2,8 +2,6 @@ import requests
 import re
 from bs4 import BeautifulSoup
 from datetime import datetime
-import math
-
 
 def get_bond_data(ticker):
     headers = {'User-Agent': 'Mozilla/5.0'}
@@ -17,7 +15,6 @@ def get_bond_data(ticker):
         'Доходность к погашению (%)': None
     }
 
-    # Получение данных с MOEX
     try:
         url = f"https://iss.moex.com/iss/engines/stock/markets/bonds/boards/TQCB/securities/{ticker}.json"
         r = requests.get(url, headers=headers, timeout=10)
@@ -46,7 +43,6 @@ def get_bond_data(ticker):
     except Exception as e:
         print(f"Ошибка при получении данных с MOEX для {ticker}: {e}")
 
-    # Парсинг smart-lab при недостающих данных
     try:
         smart_lab_url = f"https://smart-lab.ru/q/bonds/{ticker}/"
         r = requests.get(smart_lab_url, headers=headers, timeout=10)
@@ -64,7 +60,6 @@ def get_bond_data(ticker):
                         return None
                 return None
 
-            # Всегда пытаемся извлечь данные, если они отсутствуют
             if bond_info['Название'] is None:
                 name_match = re.search(r"Имя облигации\s*(.*?)\s", text)
                 if name_match:
@@ -78,7 +73,6 @@ def get_bond_data(ticker):
     except Exception as e:
         print(f"Ошибка при парсинге smart-lab для {ticker}: {e}")
 
-    # Расчёт доходности при отсутствии
     try:
         if bond_info['Доходность к погашению (%)'] is None:
             if bond_info['Размер купона'] == 0:
@@ -138,7 +132,6 @@ def get_stock_data_moex(ticker):
     min_price = None
 
     try:
-        # --- API MOEX: Название и marketdata ---
         info_url = f"https://iss.moex.com/iss/engines/stock/markets/shares/securities/{ticker}.json"
         r = requests.get(info_url, headers=headers, timeout=10)
         if r.status_code == 200:
@@ -149,7 +142,6 @@ def get_stock_data_moex(ticker):
                 d = dict(zip(cols, vals[0]))
                 stock_info['Название'] = d.get("SECNAME", "Неизвестно")
 
-        # --- Цена (LAST) ---
         price_url = f"https://iss.moex.com/iss/engines/stock/markets/shares/boards/TQBR/securities/{ticker}.json"
         r = requests.get(price_url, headers=headers, timeout=10)
         if r.status_code == 200:
@@ -162,7 +154,6 @@ def get_stock_data_moex(ticker):
                 max_price = d.get("HIGH")
                 min_price = d.get("LOW")
 
-        # --- Последний дивиденд ---
         div_url = f"https://iss.moex.com/iss/securities/{ticker}/dividends.json"
         r = requests.get(div_url, headers=headers, timeout=10)
         if r.status_code == 200:
@@ -181,7 +172,6 @@ def get_stock_data_moex(ticker):
     except Exception as e:
         print(f"Ошибка при запросе API MOEX для {ticker}: {e}")
 
-    # --- Парсинг BCS ---
     if (stock_info['Стоимость'] is None or stock_info['Размер дивиденда'] == 0 or max_price is None or min_price is None):
         try:
             bcs_url = f"https://bcs.ru/markets/{ticker.lower()}/tqbr"
@@ -199,11 +189,9 @@ def get_stock_data_moex(ticker):
                             return None
                     return None
 
-                # Цена
                 if stock_info['Стоимость'] is None:
                     stock_info['Стоимость'] = extract(r"Стоимость\s+[A-Z]+\s+на\s+\d{2}\.\d{2}\.\d{4}\s*—\s*([\d\s,.]+)")
 
-                # Дивиденды
                 if stock_info['Размер дивиденда'] == 0:
                     stock_info['Размер дивиденда'] = extract(r"Дивиденды\s+([\d\s,.]+)")
                     if stock_info['Размер дивиденда']:
@@ -214,7 +202,6 @@ def get_stock_data_moex(ticker):
                         stock_info['Размер дивиденда'] = 0.0
                         stock_info['Частота выплат дивидендов в год'] = 0
 
-                # Максимум и минимум
                 if max_price is None:
                     max_price = extract(r"максимальная цена\s*—\s*([\d\s,.]+)")
 
@@ -224,7 +211,6 @@ def get_stock_data_moex(ticker):
         except Exception as e:
             print(f"Ошибка при парсинге BCS для {ticker}: {e}")
 
-    # --- Расчёт доходности ---
     try:
         if stock_info['Размер дивиденда'] > 0 and stock_info['Стоимость']:
             stock_info['Доходность (%)'] = round((stock_info['Размер дивиденда'] / stock_info['Стоимость']) * 100, 2)
