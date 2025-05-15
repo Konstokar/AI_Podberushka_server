@@ -70,6 +70,6 @@ class UserService:
     def get_user(login):
         user = User.get_user_by_login(login)
         if user:
-            return user
-        return {"error": "Пользователь не найден"}, 404
-
+            user["_id"] = str(user["_id"])
+            return jsonify(user), 200
+        return jsonify({"error": "Пользователь не найден"}), 404

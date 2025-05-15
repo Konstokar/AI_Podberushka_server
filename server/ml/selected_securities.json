@@ -2,116 +2,116 @@
     "Bonds": [
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26230RMFS1",
+            "ticker": "SU26242RMFS6",
             "coupon": {
-                "size": 38.39,
-                "frequency_per_year": 2.01
+                "size": 44.88,
+                "frequency_per_year": 2
             },
-            "maturity_date": "16-03-2039",
-            "annual_return": 15.76,
-            "price": 571.5
-        },
-        {
-            "name": "ОФЗ-ПД",
-            "ticker": "SU26236RMFS8",
-            "coupon": {
-                "size": 28.42,
-                "frequency_per_year": 2.01
-            },
-            "maturity_date": "17-05-2028",
-            "annual_return": 17.15,
-            "price": 750.5
+            "maturity_date": "29-08-2029",
+            "annual_return": 16.09,
+            "price": 801.5
         },
         {
             "name": "ОФЗ-АД",
             "ticker": "SU46011RMFS1",
             "coupon": {
                 "size": 29.92,
-                "frequency_per_year": 1.0
+                "frequency_per_year": 1
             },
             "maturity_date": "20-08-2025",
             "annual_return": 100.0,
-            "price": 2.0
+            "price": 1.0
         },
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26234RMFS3",
+            "ticker": "SU26233RMFS5",
             "coupon": {
-                "size": 22.44,
-                "frequency_per_year": 2.01
+                "size": 30.42,
+                "frequency_per_year": 2
             },
-            "maturity_date": "16-07-2025",
-            "annual_return": 21.29,
-            "price": 971.1
+            "maturity_date": "18-07-2035",
+            "annual_return": 15.63,
+            "price": 540.5
         },
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26218RMFS6",
+            "ticker": "SU26243RMFS4",
             "coupon": {
-                "size": 42.38,
-                "frequency_per_year": 2.01
+                "size": 48.87,
+                "frequency_per_year": 2
             },
-            "maturity_date": "17-09-2031",
-            "annual_return": 16.45,
-            "price": 712.4
+            "maturity_date": "19-05-2038",
+            "annual_return": 16.14,
+            "price": 683.5
         },
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26224RMFS4",
+            "ticker": "SU26207RMFS9",
             "coupon": {
-                "size": 34.41,
-                "frequency_per_year": 2.01
+                "size": 40.64,
+                "frequency_per_year": 2
             },
-            "maturity_date": "23-05-2029",
-            "annual_return": 16.61,
-            "price": 736.8
-        },
-        {
-            "name": "ОФЗ-ПД",
-            "ticker": "SU26237RMFS6",
-            "coupon": {
-                "size": 33.41,
-                "frequency_per_year": 2.01
-            },
-            "maturity_date": "14-03-2029",
-            "annual_return": 16.73,
-            "price": 737.5
+            "maturity_date": "03-02-2027",
+            "annual_return": 17.5,
+            "price": 874.9
         },
         {
             "name": "ОФЗ-ПД",
             "ticker": "SU26228RMFS5",
             "coupon": {
                 "size": 38.15,
-                "frequency_per_year": 2.01
+                "frequency_per_year": 2
             },
             "maturity_date": "10-04-2030",
-            "annual_return": 16.48,
-            "price": 726.3
+            "annual_return": 16.06,
+            "price": 737.9
         },
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26229RMFS3",
+            "ticker": "SU26236RMFS8",
             "coupon": {
-                "size": 35.65,
-                "frequency_per_year": 2.01
+                "size": 28.42,
+                "frequency_per_year": 2
             },
-            "maturity_date": "12-11-2025",
-            "annual_return": 19.43,
-            "price": 945.6
+            "maturity_date": "17-05-2028",
+            "annual_return": 16.43,
+            "price": 765.4
         },
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26235RMFS0",
+            "ticker": "SU26230RMFS1",
             "coupon": {
-                "size": 29.42,
-                "frequency_per_year": 2.01
+                "size": 38.39,
+                "frequency_per_year": 2
             },
-            "maturity_date": "12-03-2031",
-            "annual_return": 16.5,
-            "price": 628.5
+            "maturity_date": "16-03-2039",
+            "annual_return": 15.48,
+            "price": 581.7
+        },
+        {
+            "name": "ОФЗ-ПД",
+            "ticker": "SU26244RMFS2",
+            "coupon": {
+                "size": 56.1,
+                "frequency_per_year": 2
+            },
+            "maturity_date": "15-03-2034",
+            "annual_return": 15.95,
+            "price": 804.5
+        },
+        {
+            "name": "ОФЗ-ПД",
+            "ticker": "SU26212RMFS9",
+            "coupon": {
+                "size": 35.15,
+                "frequency_per_year": 2
+            },
+            "maturity_date": "19-01-2028",
+            "annual_return": 16.84,
+            "price": 807.2
         }
     ],
     "Stocks": [],
     "risk_category": "Низкий",
-    "expected_return": 17.66
+    "expected_return": 16.31
 }

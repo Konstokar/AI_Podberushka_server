@@ -6,95 +6,95 @@
                 "ticker": "SU26243RMFS4",
                 "coupon": {
                     "size": 48.87,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "19-05-2038",
-                "annual_return": 16.33,
-                "price": 675.9
+                "annual_return": 16.14,
+                "price": 683.5
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26221RMFS0",
                 "coupon": {
                     "size": 38.39,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "23-03-2033",
-                "annual_return": 16.21,
-                "price": 648.3
+                "annual_return": 16.0,
+                "price": 655.4
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29014RMFS6",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "25-03-2026",
                 "annual_return": 0.0,
-                "price": 992.4
+                "price": 991.7
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26237RMFS6",
                 "coupon": {
                     "size": 33.41,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "14-03-2029",
-                "annual_return": 16.71,
-                "price": 737.9
+                "annual_return": 16.33,
+                "price": 747.6
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29019RMFS5",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "18-07-2029",
                 "annual_return": 0.0,
-                "price": 974.2
+                "price": 975.4
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29018RMFS7",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "26-11-2031",
                 "annual_return": 0.0,
-                "price": 970.5
+                "price": 969.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26242RMFS6",
                 "coupon": {
                     "size": 44.88,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "29-08-2029",
-                "annual_return": 16.54,
-                "price": 789.6
+                "annual_return": 16.09,
+                "price": 801.5
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29015RMFS3",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "18-10-2028",
                 "annual_return": 0.0,
-                "price": 982.5
+                "price": 983.1
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26231RMFS9",
                 "coupon": {
                     "size": 1.25,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "20-07-2044",
                 "annual_return": null,
@@ -105,175 +105,175 @@
                 "ticker": "SU26219RMFS4",
                 "coupon": {
                     "size": 38.64,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "16-09-2026",
-                "annual_return": 18.04,
-                "price": 887.9
+                "annual_return": 18.0,
+                "price": 890.3
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26212RMFS9",
                 "coupon": {
                     "size": 35.15,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "19-01-2028",
-                "annual_return": 17.37,
-                "price": 796.7
+                "annual_return": 16.84,
+                "price": 807.2
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26233RMFS5",
                 "coupon": {
                     "size": 30.42,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "18-07-2035",
-                "annual_return": 15.83,
-                "price": 533.7
+                "annual_return": 15.63,
+                "price": 540.5
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29025RMFS2",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "12-08-2037",
                 "annual_return": 0.0,
-                "price": 944.3
+                "price": 944.7
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29027RMFS8",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 3.97
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "11-09-2036",
                 "annual_return": 0.0,
-                "price": 955.5
+                "price": 952.5
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29017RMFS9",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "25-08-2032",
                 "annual_return": 0.0,
-                "price": 967.0
+                "price": 965.6
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26224RMFS4",
                 "coupon": {
                     "size": 34.41,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "23-05-2029",
-                "annual_return": 16.6,
-                "price": 737.0
+                "annual_return": 16.02,
+                "price": 751.3
             },
             {
                 "name": "ОФЗ-АД",
                 "ticker": "SU46011RMFS1",
                 "coupon": {
                     "size": 29.92,
-                    "frequency_per_year": 1.0
+                    "frequency_per_year": 1
                 },
                 "maturity_date": "20-08-2025",
                 "annual_return": 100.0,
-                "price": 2.0
+                "price": 1.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26236RMFS8",
                 "coupon": {
                     "size": 28.42,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "17-05-2028",
-                "annual_return": 17.16,
-                "price": 750.5
+                "annual_return": 16.43,
+                "price": 765.4
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26248RMFS3",
                 "coupon": {
                     "size": 61.08,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "16-05-2040",
-                "annual_return": 16.35,
-                "price": 801.0
+                "annual_return": 16.3,
+                "price": 803.6
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26239RMFS2",
                 "coupon": {
                     "size": 34.41,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "23-07-2031",
-                "annual_return": 16.42,
-                "price": 655.4
+                "annual_return": 16.05,
+                "price": 666.7
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26245RMFS9",
                 "coupon": {
                     "size": 59.84,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "26-09-2035",
-                "annual_return": 16.34,
-                "price": 812.1
+                "annual_return": 16.28,
+                "price": 814.6
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26230RMFS1",
                 "coupon": {
                     "size": 38.39,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "16-03-2039",
-                "annual_return": 15.78,
-                "price": 571.1
+                "annual_return": 15.48,
+                "price": 581.7
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29021RMFS1",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "27-11-2030",
                 "annual_return": 0.0,
-                "price": 968.5
+                "price": 968.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26247RMFS5",
                 "coupon": {
                     "size": 61.08,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "11-05-2039",
-                "annual_return": 16.35,
-                "price": 804.8
+                "annual_return": 16.29,
+                "price": 807.8
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29008RMFS8",
                 "coupon": {
                     "size": 110.05,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "03-10-2029",
-                "annual_return": 21.88,
+                "annual_return": 21.77,
                 "price": 1.0
             },
             {
@@ -281,54 +281,54 @@
                 "ticker": "SU29013RMFS8",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "18-09-2030",
                 "annual_return": 0.0,
-                "price": 968.7
+                "price": 968.4
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26240RMFS0",
                 "coupon": {
                     "size": 34.9,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "30-07-2036",
-                "annual_return": 15.78,
-                "price": 564.1
+                "annual_return": 15.58,
+                "price": 571.1
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26226RMFS9",
                 "coupon": {
                     "size": 39.64,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "07-10-2026",
-                "annual_return": 17.9,
-                "price": 887.7
+                "annual_return": 17.83,
+                "price": 890.3
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29022RMFS9",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "20-07-2033",
                 "annual_return": 0.0,
-                "price": 971.0
+                "price": 968.0
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29007RMFS0",
                 "coupon": {
                     "size": 106.71,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "03-03-2027",
-                "annual_return": 20.62,
+                "annual_return": 20.82,
                 "price": 1.0
             },
             {
@@ -336,32 +336,32 @@
                 "ticker": "SU29023RMFS7",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "23-08-2034",
                 "annual_return": 0.0,
-                "price": 966.1
+                "price": 967.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26246RMFS7",
                 "coupon": {
                     "size": 59.84,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "12-03-2036",
-                "annual_return": 16.37,
-                "price": 807.6
+                "annual_return": 16.3,
+                "price": 810.4
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29009RMFS6",
                 "coupon": {
-                    "size": 93.99,
-                    "frequency_per_year": 2.01
+                    "size": 112.04,
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "05-05-2032",
-                "annual_return": 18.54,
+                "annual_return": 22.23,
                 "price": 1.0
             },
             {
@@ -369,40 +369,40 @@
                 "ticker": "SU26225RMFS1",
                 "coupon": {
                     "size": 36.15,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "10-05-2034",
-                "annual_return": 16.25,
-                "price": 601.5
+                "annual_return": 15.95,
+                "price": 611.7
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29016RMFS1",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "23-12-2026",
                 "annual_return": 0.0,
-                "price": 988.4
+                "price": 988.2
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26235RMFS0",
                 "coupon": {
                     "size": 29.42,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "12-03-2031",
-                "annual_return": 16.46,
-                "price": 629.6
+                "annual_return": 16.01,
+                "price": 642.4
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29010RMFS4",
                 "coupon": {
                     "size": 99.33,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "06-12-2034",
                 "annual_return": 19.62,
@@ -413,7 +413,7 @@
                 "ticker": "SU29024RMFS5",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "18-04-2035",
                 "annual_return": 0.0,
@@ -424,51 +424,51 @@
                 "ticker": "SU26229RMFS3",
                 "coupon": {
                     "size": 35.65,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "12-11-2025",
-                "annual_return": 19.35,
-                "price": 946.0
+                "annual_return": 19.11,
+                "price": 949.7
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26241RMFS8",
                 "coupon": {
                     "size": 47.37,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "17-11-2032",
-                "annual_return": 16.28,
-                "price": 732.5
+                "annual_return": 15.98,
+                "price": 743.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26218RMFS6",
                 "coupon": {
                     "size": 42.38,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "17-09-2031",
-                "annual_return": 16.48,
-                "price": 711.5
+                "annual_return": 15.97,
+                "price": 727.2
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26234RMFS3",
                 "coupon": {
                     "size": 22.44,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "16-07-2025",
-                "annual_return": 21.29,
-                "price": 971.1
+                "annual_return": 21.37,
+                "price": 975.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU25085RMFS0",
                 "coupon": {
                     "size": 31.91,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "24-09-2025",
                 "annual_return": null,
@@ -479,77 +479,77 @@
                 "ticker": "SU26207RMFS9",
                 "coupon": {
                     "size": 40.64,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "03-02-2027",
-                "annual_return": 17.8,
-                "price": 869.5
+                "annual_return": 17.5,
+                "price": 874.9
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29026RMFS0",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 3.97
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "04-09-2038",
                 "annual_return": 0.0,
-                "price": 963.5
+                "price": 963.2
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26238RMFS4",
                 "coupon": {
                     "size": 35.4,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "15-05-2041",
-                "annual_return": 15.66,
-                "price": 521.6
+                "annual_return": 15.55,
+                "price": 525.5
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26228RMFS5",
                 "coupon": {
                     "size": 38.15,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "10-04-2030",
-                "annual_return": 16.46,
-                "price": 726.9
+                "annual_return": 16.06,
+                "price": 737.9
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26232RMFS7",
                 "coupon": {
                     "size": 29.92,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "06-10-2027",
-                "annual_return": 17.74,
-                "price": 788.5
+                "annual_return": 17.15,
+                "price": 799.5
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26244RMFS2",
                 "coupon": {
                     "size": 56.1,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "15-03-2034",
-                "annual_return": 16.22,
-                "price": 794.2
+                "annual_return": 15.95,
+                "price": 804.5
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29020RMFS3",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "22-09-2027",
                 "annual_return": 0.0,
-                "price": 984.5
+                "price": 985.8
             }
         ]
     },
@@ -558,13 +558,13 @@
             {
                 "name": "\"ЭЛ5-Энерго\" ПАО",
                 "ticker": "ELFV",
-                "price": 0.4904,
+                "price": 0.4968,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 2.26
+                "annual_return": 2.08
             },
             {
                 "name": "Ашинский метзавод ПАО ао",
@@ -580,403 +580,282 @@
             {
                 "name": "Абрау-Дюрсо ПАО ао",
                 "ticker": "ABRD",
-                "price": 172.6,
+                "price": 187.2,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.98
+                "annual_return": 5.9
             },
             {
                 "name": "НоваБев Групп ПАО ао",
                 "ticker": "BELU",
-                "price": 468.5,
+                "price": 474.5,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.22
+                "annual_return": 1.6
             },
             {
                 "name": "Башнефть АНК ао",
                 "ticker": "BANE",
-                "price": 1922.5,
+                "price": 1961,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 199,
                     "frequency": 1
                 },
-                "annual_return": 10.35
+                "annual_return": 10.15
             },
             {
                 "name": "АКБ \"АВАНГАРД\" ПАО ао",
                 "ticker": "AVAN",
-                "price": 700,
+                "price": 692,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.9
+                "annual_return": 1.88
             },
             {
                 "name": "АПРИ",
                 "ticker": "APRI",
-                "price": 13.07,
+                "price": 13.118,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 0.37
+                "annual_return": 0.23
             },
             {
-                "name": "АЛРОСА ПАО ао",
+                "name": null,
                 "ticker": "ALRS",
-                "price": 47.31,
-                "is_divids": "Да",
+                "price": null,
+                "is_divids": "Нет",
                 "dividend": {
-                    "yield": 1.47,
-                    "frequency": 1
+                    "yield": 0.0,
+                    "frequency": 0
                 },
-                "annual_return": 3.11
+                "annual_return": null
             },
             {
                 "name": "Диасофт ао",
                 "ticker": "DIAS",
-                "price": 3187.5,
+                "price": 3224,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.74
+                "annual_return": 3.21
             },
             {
                 "name": "Акрон ПАО ао",
                 "ticker": "AKRN",
-                "price": 15892,
+                "price": 16528,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 152,
                     "frequency": 1
                 },
-                "annual_return": 0.96
+                "annual_return": 0.92
             },
             {
                 "name": "Донской завод радиодеталей ао",
                 "ticker": "DZRD",
-                "price": 3800,
+                "price": 3900,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 1.32
+                "annual_return": 1.83
             },
             {
                 "name": "Северсталь (ПАО)ао",
                 "ticker": "CHMF",
-                "price": 989,
+                "price": 1028.8,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 2.03,
                     "frequency": 1
                 },
-                "annual_return": 0.21
+                "annual_return": 0.2
             },
             {
                 "name": "АФК \"Система\" ПАО ао",
                 "ticker": "AFKS",
-                "price": 14.295,
+                "price": 15.113,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 2.06,
                     "frequency": 1
                 },
-                "annual_return": 14.41
+                "annual_return": 13.63
             },
             {
                 "name": "ГДР FixPrice Group PLC ORD SHS",
                 "ticker": "FIXP",
-                "price": 151.8,
+                "price": 156.8,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 2.93
+                "annual_return": 3.91
             },
             {
                 "name": "ГАЗ ПАО ао",
                 "ticker": "GAZA",
-                "price": 640,
+                "price": 664,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.84
+                "annual_return": 1.37
             },
             {
                 "name": "Группа Астра ао",
                 "ticker": "ASTR",
-                "price": 387.15,
+                "price": 393.4,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
-                },
-                "annual_return": 2.84
-            },
-            {
-                "name": "ЕвроТранс ао",
-                "ticker": "EUTR",
-                "price": 120.1,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 3.54
-            },
-            {
-                "name": "Группа Аренадата",
-                "ticker": "DATA",
-                "price": 126.5,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 2.56
-            },
-            {
-                "name": "\"ДЭК\" ПАО ао",
-                "ticker": "DVEC",
-                "price": 2.17,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.84
-            },
-            {
-                "name": "ДВ морское пароходство ПАО ао",
-                "ticker": "FESH",
-                "price": 60.1,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.3
-            },
-            {
-                "name": "МКПАО ЭН+ ГРУП ао",
-                "ticker": "ENPG",
-                "price": 387,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.4
-            },
-            {
-                "name": "Банк Санкт-Петербург ап",
-                "ticker": "BSPBP",
-                "price": 59.05,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 6.31
-            },
-            {
-                "name": "Бурятзолото ПАО ао",
-                "ticker": "BRZL",
-                "price": 1797,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.47
-            },
-            {
-                "name": "\"ЧМК\" ПАО ао",
-                "ticker": "CHMK",
-                "price": 5135,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 8.6
-            },
-            {
-                "name": "\"Центральный Телеграф\" ПАО ао",
-                "ticker": "CNTL",
-                "price": 10.06,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 3.19
-            },
-            {
-                "name": "Элемент",
-                "ticker": "ELMT",
-                "price": 0.1321,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.62
-            },
-            {
-                "name": "Совкомфлот ао",
-                "ticker": "FLOT",
-                "price": 81.51,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.3
-            },
-            {
-                "name": "Каршеринг Руссия ао",
-                "ticker": "DELI",
-                "price": 159.8,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.33
-            },
-            {
-                "name": "Башинформсвязь(ПАО) ап",
-                "ticker": "BISVP",
-                "price": 8.8,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.55
-            },
-            {
-                "name": "ГДР ETALON GROUP PLC ORD SHS",
-                "ticker": "ETLN",
-                "price": 56.2,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.03
-            },
-            {
-                "name": "ПАО \"Артген\"",
-                "ticker": "ABIO",
-                "price": 80.72,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 3.27
-            },
-            {
-                "name": "Завод ДИОД ПАО ао",
-                "ticker": "DIOD",
-                "price": 10.78,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 2.95
-            },
-            {
-                "name": "\"МКБ\" ПАО ао",
-                "ticker": "CBOM",
-                "price": 7.213,
-                "is_divids": "Да",
-                "dividend": {
-                    "yield": 0.11,
-                    "frequency": 1
                 },
                 "annual_return": 1.53
             },
             {
-                "name": "ПАО ИНАРКТИКА",
-                "ticker": "AQUA",
-                "price": 632,
+                "name": "ЕвроТранс ао",
+                "ticker": "EUTR",
+                "price": 127.25,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.09
+                "annual_return": 4.25
             },
             {
-                "name": "Донской завод радиодеталей ап",
-                "ticker": "DZRDP",
-                "price": 2500,
+                "name": "Группа Аренадата",
+                "ticker": "DATA",
+                "price": 127.42,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 5.62
+                "annual_return": 3.37
             },
             {
-                "name": "\"ЕвропЭлектротехника\" ПАО ао",
-                "ticker": "EELT",
-                "price": 10.96,
+                "name": "\"ДЭК\" ПАО ао",
+                "ticker": "DVEC",
+                "price": 2.234,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.93
+                "annual_return": 4.08
             },
             {
-                "name": "Аэрофлот-росс.авиалин(ПАО)ао",
-                "ticker": "AFLT",
-                "price": 67.94,
-                "is_divids": "Да",
-                "dividend": {
-                    "yield": 2.5,
-                    "frequency": 1
-                },
-                "annual_return": 3.68
-            },
-            {
-                "name": "\"Астраханская ЭСК\" ПАО",
-                "ticker": "ASSB",
-                "price": 1.8,
+                "name": "ДВ морское пароходство ПАО ао",
+                "ticker": "FESH",
+                "price": 61.56,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.44
+                "annual_return": 3.4
             },
             {
-                "name": "ПАО \"Банк \"Санкт-Петербург\" ао",
-                "ticker": "BSPB",
-                "price": 377.65,
+                "name": "МКПАО ЭН+ ГРУП ао",
+                "ticker": "ENPG",
+                "price": 401.4,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.34
+            },
+            {
+                "name": "Банк Санкт-Петербург ап",
+                "ticker": "BSPBP",
+                "price": 65.3,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 5.02
+            },
+            {
+                "name": "Бурятзолото ПАО ао",
+                "ticker": "BRZL",
+                "price": 1780,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.92
+            },
+            {
+                "name": "\"ЧМК\" ПАО ао",
+                "ticker": "CHMK",
+                "price": 5150,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 4.54
+            },
+            {
+                "name": "\"Центральный Телеграф\" ПАО ао",
+                "ticker": "CNTL",
+                "price": 10.36,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.32
+            },
+            {
+                "name": "Элемент",
+                "ticker": "ELMT",
+                "price": 0.1343,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.09
+            },
+            {
+                "name": "Совкомфлот ао",
+                "ticker": "FLOT",
+                "price": 83.28,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.76
+            },
+            {
+                "name": "Каршеринг Руссия ао",
+                "ticker": "DELI",
+                "price": 162.05,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
@@ -985,70 +864,191 @@
                 "annual_return": 3.05
             },
             {
-                "name": "\"Центральный Телеграф\" ПАО ап",
-                "ticker": "CNTLP",
-                "price": 7.18,
+                "name": "Башинформсвязь(ПАО) ап",
+                "ticker": "BISVP",
+                "price": 9.14,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.93
+                "annual_return": 1.54
+            },
+            {
+                "name": "ГДР ETALON GROUP PLC ORD SHS",
+                "ticker": "ETLN",
+                "price": 58.32,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.48
+            },
+            {
+                "name": "ПАО \"Артген\"",
+                "ticker": "ABIO",
+                "price": 81.24,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.45
+            },
+            {
+                "name": "Завод ДИОД ПАО ао",
+                "ticker": "DIOD",
+                "price": 10.91,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.84
+            },
+            {
+                "name": "\"МКБ\" ПАО ао",
+                "ticker": "CBOM",
+                "price": 7.433,
+                "is_divids": "Да",
+                "dividend": {
+                    "yield": 0.11,
+                    "frequency": 1
+                },
+                "annual_return": 1.48
+            },
+            {
+                "name": "ПАО ИНАРКТИКА",
+                "ticker": "AQUA",
+                "price": 645.5,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.79
+            },
+            {
+                "name": "Донской завод радиодеталей ап",
+                "ticker": "DZRDP",
+                "price": 2550,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.0
+            },
+            {
+                "name": "\"ЕвропЭлектротехника\" ПАО ао",
+                "ticker": "EELT",
+                "price": 11.14,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 5.54
+            },
+            {
+                "name": "Аэрофлот-росс.авиалин(ПАО)ао",
+                "ticker": "AFLT",
+                "price": 69.99,
+                "is_divids": "Да",
+                "dividend": {
+                    "yield": 2.5,
+                    "frequency": 1
+                },
+                "annual_return": 3.57
+            },
+            {
+                "name": "\"Астраханская ЭСК\" ПАО",
+                "ticker": "ASSB",
+                "price": 1.82,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.23
+            },
+            {
+                "name": "ПАО \"Банк \"Санкт-Петербург\" ао",
+                "ticker": "BSPB",
+                "price": 371.7,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.96
+            },
+            {
+                "name": "\"Центральный Телеграф\" ПАО ап",
+                "ticker": "CNTLP",
+                "price": 7.48,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.44
             },
             {
                 "name": "Башнефть АНК ап",
                 "ticker": "BANEP",
-                "price": 1120,
+                "price": 1140.5,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 199,
                     "frequency": 1
                 },
-                "annual_return": 17.77
+                "annual_return": 17.45
             },
             {
                 "name": "МКПАО \"ЦИАН\"",
                 "ticker": "CNRU",
-                "price": 529,
+                "price": 541,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 2.01
+                "annual_return": 5.22
             },
             {
                 "name": "ПАО \"Аптечная сеть 36,6\" ао",
                 "ticker": "APTK",
-                "price": 9.892,
+                "price": 10.05,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.45
+                "annual_return": 1.84
             },
             {
                 "name": "\"ЧКПЗ\" ПАО ао",
                 "ticker": "CHKZ",
-                "price": 17100,
+                "price": 17450,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 1.18
+                "annual_return": 0.0
             },
             {
                 "name": "\"ФСК - Россети\" ПАО",
                 "ticker": "FEES",
-                "price": 0.0672,
+                "price": 0.06838,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 0,
                     "frequency": 1
                 },
-                "annual_return": 3.98
+                "annual_return": 2.28
             },
             {
                 "name": "ГДР ROS AGRO PLC ORD SHS",
@@ -1064,123 +1064,112 @@
             {
                 "name": "УК Арсагера ПАО-ао",
                 "ticker": "ARSA",
-                "price": 10.86,
+                "price": 10.98,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 0.83
+                "annual_return": 1.1
             },
             {
                 "name": "Белон ОАО ао",
                 "ticker": "BLNG",
-                "price": 13.59,
+                "price": 13.86,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 7.21
+                "annual_return": 4.11
             },
             {
                 "name": "СТГ ао",
                 "ticker": "CARM",
-                "price": 1.439,
+                "price": 1.4995,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.2
+                "annual_return": 2.83
             },
             {
                 "name": "РН-Западная Сибирь ПАО ао",
                 "ticker": "CHGZ",
-                "price": 85.4,
+                "price": 90.4,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 5.41
+                "annual_return": 3.79
             },
             {
                 "name": "Башнефть АНК ао",
                 "ticker": "BANE",
-                "price": 1922.5,
+                "price": 1961,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 199,
                     "frequency": 1
                 },
-                "annual_return": 10.35
-            },
-            {
-                "name": "АЛРОСА ПАО ао",
-                "ticker": "ALRS",
-                "price": 47.31,
-                "is_divids": "Да",
-                "dividend": {
-                    "yield": 1.47,
-                    "frequency": 1
-                },
-                "annual_return": 3.11
+                "annual_return": 10.15
             },
             {
                 "name": "Акрон ПАО ао",
                 "ticker": "AKRN",
-                "price": 15892,
+                "price": 16528,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 152,
                     "frequency": 1
                 },
-                "annual_return": 0.96
+                "annual_return": 0.92
             },
             {
                 "name": "Северсталь (ПАО)ао",
                 "ticker": "CHMF",
-                "price": 989,
+                "price": 1028.8,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 2.03,
                     "frequency": 1
                 },
-                "annual_return": 0.21
+                "annual_return": 0.2
             },
             {
                 "name": "АФК \"Система\" ПАО ао",
                 "ticker": "AFKS",
-                "price": 14.295,
+                "price": 15.113,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 2.06,
                     "frequency": 1
                 },
-                "annual_return": 14.41
+                "annual_return": 13.63
             },
             {
                 "name": "Аэрофлот-росс.авиалин(ПАО)ао",
                 "ticker": "AFLT",
-                "price": 67.94,
+                "price": 69.99,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 2.5,
                     "frequency": 1
                 },
-                "annual_return": 3.68
+                "annual_return": 3.57
             },
             {
                 "name": "Башнефть АНК ап",
                 "ticker": "BANEP",
-                "price": 1120,
+                "price": 1140.5,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 199,
                     "frequency": 1
                 },
-                "annual_return": 17.77
+                "annual_return": 17.45
             }
         ],
         "Bonds": [
@@ -1189,95 +1178,95 @@
                 "ticker": "SU26243RMFS4",
                 "coupon": {
                     "size": 48.87,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "19-05-2038",
-                "annual_return": 16.33,
-                "price": 675.9
+                "annual_return": 16.14,
+                "price": 683.5
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26221RMFS0",
                 "coupon": {
                     "size": 38.39,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "23-03-2033",
-                "annual_return": 16.21,
-                "price": 648.3
+                "annual_return": 16.0,
+                "price": 655.4
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29014RMFS6",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "25-03-2026",
                 "annual_return": 0.0,
-                "price": 992.4
+                "price": 991.7
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26237RMFS6",
                 "coupon": {
                     "size": 33.41,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "14-03-2029",
-                "annual_return": 16.71,
-                "price": 737.9
+                "annual_return": 16.33,
+                "price": 747.6
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29019RMFS5",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "18-07-2029",
                 "annual_return": 0.0,
-                "price": 974.2
+                "price": 975.4
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29018RMFS7",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "26-11-2031",
                 "annual_return": 0.0,
-                "price": 970.5
+                "price": 969.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26242RMFS6",
                 "coupon": {
                     "size": 44.88,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "29-08-2029",
-                "annual_return": 16.54,
-                "price": 789.6
+                "annual_return": 16.09,
+                "price": 801.5
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29015RMFS3",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "18-10-2028",
                 "annual_return": 0.0,
-                "price": 982.5
+                "price": 983.1
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26231RMFS9",
                 "coupon": {
                     "size": 1.25,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "20-07-2044",
                 "annual_return": null,
@@ -1288,175 +1277,175 @@
                 "ticker": "SU26219RMFS4",
                 "coupon": {
                     "size": 38.64,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "16-09-2026",
-                "annual_return": 18.04,
-                "price": 887.9
+                "annual_return": 18.0,
+                "price": 890.3
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26212RMFS9",
                 "coupon": {
                     "size": 35.15,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "19-01-2028",
-                "annual_return": 17.37,
-                "price": 796.7
+                "annual_return": 16.84,
+                "price": 807.2
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26233RMFS5",
                 "coupon": {
                     "size": 30.42,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "18-07-2035",
-                "annual_return": 15.83,
-                "price": 533.7
+                "annual_return": 15.63,
+                "price": 540.5
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29025RMFS2",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "12-08-2037",
                 "annual_return": 0.0,
-                "price": 944.3
+                "price": 944.7
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29027RMFS8",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 3.97
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "11-09-2036",
                 "annual_return": 0.0,
-                "price": 955.5
+                "price": 952.5
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29017RMFS9",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "25-08-2032",
                 "annual_return": 0.0,
-                "price": 967.0
+                "price": 965.6
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26224RMFS4",
                 "coupon": {
                     "size": 34.41,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "23-05-2029",
-                "annual_return": 16.6,
-                "price": 737.0
+                "annual_return": 16.02,
+                "price": 751.3
             },
             {
                 "name": "ОФЗ-АД",
                 "ticker": "SU46011RMFS1",
                 "coupon": {
                     "size": 29.92,
-                    "frequency_per_year": 1.0
+                    "frequency_per_year": 1
                 },
                 "maturity_date": "20-08-2025",
                 "annual_return": 100.0,
-                "price": 2.0
+                "price": 1.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26236RMFS8",
                 "coupon": {
                     "size": 28.42,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "17-05-2028",
-                "annual_return": 17.16,
-                "price": 750.5
+                "annual_return": 16.43,
+                "price": 765.4
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26248RMFS3",
                 "coupon": {
                     "size": 61.08,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "16-05-2040",
-                "annual_return": 16.35,
-                "price": 801.0
+                "annual_return": 16.3,
+                "price": 803.6
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26239RMFS2",
                 "coupon": {
                     "size": 34.41,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "23-07-2031",
-                "annual_return": 16.42,
-                "price": 655.4
+                "annual_return": 16.05,
+                "price": 666.7
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26245RMFS9",
                 "coupon": {
                     "size": 59.84,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "26-09-2035",
-                "annual_return": 16.34,
-                "price": 812.1
+                "annual_return": 16.28,
+                "price": 814.6
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26230RMFS1",
                 "coupon": {
                     "size": 38.39,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "16-03-2039",
-                "annual_return": 15.78,
-                "price": 571.1
+                "annual_return": 15.48,
+                "price": 581.7
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29021RMFS1",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "27-11-2030",
                 "annual_return": 0.0,
-                "price": 968.5
+                "price": 968.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26247RMFS5",
                 "coupon": {
                     "size": 61.08,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "11-05-2039",
-                "annual_return": 16.35,
-                "price": 804.8
+                "annual_return": 16.29,
+                "price": 807.8
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29008RMFS8",
                 "coupon": {
                     "size": 110.05,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "03-10-2029",
-                "annual_return": 21.88,
+                "annual_return": 21.77,
                 "price": 1.0
             },
             {
@@ -1464,54 +1453,54 @@
                 "ticker": "SU29013RMFS8",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "18-09-2030",
                 "annual_return": 0.0,
-                "price": 968.7
+                "price": 968.4
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26240RMFS0",
                 "coupon": {
                     "size": 34.9,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "30-07-2036",
-                "annual_return": 15.78,
-                "price": 564.1
+                "annual_return": 15.58,
+                "price": 571.1
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26226RMFS9",
                 "coupon": {
                     "size": 39.64,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "07-10-2026",
-                "annual_return": 17.9,
-                "price": 887.7
+                "annual_return": 17.83,
+                "price": 890.3
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29022RMFS9",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "20-07-2033",
                 "annual_return": 0.0,
-                "price": 971.0
+                "price": 968.0
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29007RMFS0",
                 "coupon": {
                     "size": 106.71,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "03-03-2027",
-                "annual_return": 20.62,
+                "annual_return": 20.82,
                 "price": 1.0
             },
             {
@@ -1519,32 +1508,32 @@
                 "ticker": "SU29023RMFS7",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "23-08-2034",
                 "annual_return": 0.0,
-                "price": 966.1
+                "price": 967.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26246RMFS7",
                 "coupon": {
                     "size": 59.84,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "12-03-2036",
-                "annual_return": 16.37,
-                "price": 807.6
+                "annual_return": 16.3,
+                "price": 810.4
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29009RMFS6",
                 "coupon": {
-                    "size": 93.99,
-                    "frequency_per_year": 2.01
+                    "size": 112.04,
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "05-05-2032",
-                "annual_return": 18.54,
+                "annual_return": 22.23,
                 "price": 1.0
             },
             {
@@ -1552,40 +1541,40 @@
                 "ticker": "SU26225RMFS1",
                 "coupon": {
                     "size": 36.15,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "10-05-2034",
-                "annual_return": 16.25,
-                "price": 601.5
+                "annual_return": 15.95,
+                "price": 611.7
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29016RMFS1",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "23-12-2026",
                 "annual_return": 0.0,
-                "price": 988.4
+                "price": 988.2
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26235RMFS0",
                 "coupon": {
                     "size": 29.42,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "12-03-2031",
-                "annual_return": 16.46,
-                "price": 629.6
+                "annual_return": 16.01,
+                "price": 642.4
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29010RMFS4",
                 "coupon": {
                     "size": 99.33,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "06-12-2034",
                 "annual_return": 19.62,
@@ -1596,7 +1585,7 @@
                 "ticker": "SU29024RMFS5",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "18-04-2035",
                 "annual_return": 0.0,
@@ -1607,51 +1596,51 @@
                 "ticker": "SU26229RMFS3",
                 "coupon": {
                     "size": 35.65,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "12-11-2025",
-                "annual_return": 19.35,
-                "price": 946.0
+                "annual_return": 19.11,
+                "price": 949.7
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26241RMFS8",
                 "coupon": {
                     "size": 47.37,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "17-11-2032",
-                "annual_return": 16.28,
-                "price": 732.5
+                "annual_return": 15.98,
+                "price": 743.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26218RMFS6",
                 "coupon": {
                     "size": 42.38,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "17-09-2031",
-                "annual_return": 16.48,
-                "price": 711.5
+                "annual_return": 15.97,
+                "price": 727.2
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26234RMFS3",
                 "coupon": {
                     "size": 22.44,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "16-07-2025",
-                "annual_return": 21.29,
-                "price": 971.1
+                "annual_return": 21.37,
+                "price": 975.0
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU25085RMFS0",
                 "coupon": {
                     "size": 31.91,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "24-09-2025",
                 "annual_return": null,
@@ -1662,77 +1651,77 @@
                 "ticker": "SU26207RMFS9",
                 "coupon": {
                     "size": 40.64,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "03-02-2027",
-                "annual_return": 17.8,
-                "price": 869.5
+                "annual_return": 17.5,
+                "price": 874.9
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29026RMFS0",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 3.97
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "04-09-2038",
                 "annual_return": 0.0,
-                "price": 963.5
+                "price": 963.2
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26238RMFS4",
                 "coupon": {
                     "size": 35.4,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "15-05-2041",
-                "annual_return": 15.66,
-                "price": 521.6
+                "annual_return": 15.55,
+                "price": 525.5
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26228RMFS5",
                 "coupon": {
                     "size": 38.15,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "10-04-2030",
-                "annual_return": 16.46,
-                "price": 726.9
+                "annual_return": 16.06,
+                "price": 737.9
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26232RMFS7",
                 "coupon": {
                     "size": 29.92,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "06-10-2027",
-                "annual_return": 17.74,
-                "price": 788.5
+                "annual_return": 17.15,
+                "price": 799.5
             },
             {
                 "name": "ОФЗ-ПД",
                 "ticker": "SU26244RMFS2",
                 "coupon": {
                     "size": 56.1,
-                    "frequency_per_year": 2.01
+                    "frequency_per_year": 2
                 },
                 "maturity_date": "15-03-2034",
-                "annual_return": 16.22,
-                "price": 794.2
+                "annual_return": 15.95,
+                "price": 804.5
             },
             {
                 "name": "ОФЗ-ПК",
                 "ticker": "SU29020RMFS3",
                 "coupon": {
                     "size": 0.0,
-                    "frequency_per_year": 4.01
+                    "frequency_per_year": 4
                 },
                 "maturity_date": "22-09-2027",
                 "annual_return": 0.0,
-                "price": 984.5
+                "price": 985.8
             }
         ]
     },
@@ -1741,13 +1730,13 @@
             {
                 "name": "\"ЭЛ5-Энерго\" ПАО",
                 "ticker": "ELFV",
-                "price": 0.4904,
+                "price": 0.4968,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 2.26
+                "annual_return": 2.08
             },
             {
                 "name": "Ашинский метзавод ПАО ао",
@@ -1763,403 +1752,282 @@
             {
                 "name": "Абрау-Дюрсо ПАО ао",
                 "ticker": "ABRD",
-                "price": 172.6,
+                "price": 187.2,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.98
+                "annual_return": 5.9
             },
             {
                 "name": "НоваБев Групп ПАО ао",
                 "ticker": "BELU",
-                "price": 468.5,
+                "price": 474.5,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.22
+                "annual_return": 1.6
             },
             {
                 "name": "Башнефть АНК ао",
                 "ticker": "BANE",
-                "price": 1922.5,
+                "price": 1961,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 199,
                     "frequency": 1
                 },
-                "annual_return": 10.35
+                "annual_return": 10.15
             },
             {
                 "name": "АКБ \"АВАНГАРД\" ПАО ао",
                 "ticker": "AVAN",
-                "price": 700,
+                "price": 692,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.9
+                "annual_return": 1.88
             },
             {
                 "name": "АПРИ",
                 "ticker": "APRI",
-                "price": 13.07,
+                "price": 13.118,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 0.37
+                "annual_return": 0.23
             },
             {
-                "name": "АЛРОСА ПАО ао",
+                "name": null,
                 "ticker": "ALRS",
-                "price": 47.31,
-                "is_divids": "Да",
+                "price": null,
+                "is_divids": "Нет",
                 "dividend": {
-                    "yield": 1.47,
-                    "frequency": 1
+                    "yield": 0.0,
+                    "frequency": 0
                 },
-                "annual_return": 3.11
+                "annual_return": null
             },
             {
                 "name": "Диасофт ао",
                 "ticker": "DIAS",
-                "price": 3187.5,
+                "price": 3224,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.74
+                "annual_return": 3.21
             },
             {
                 "name": "Акрон ПАО ао",
                 "ticker": "AKRN",
-                "price": 15892,
+                "price": 16528,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 152,
                     "frequency": 1
                 },
-                "annual_return": 0.96
+                "annual_return": 0.92
             },
             {
                 "name": "Донской завод радиодеталей ао",
                 "ticker": "DZRD",
-                "price": 3800,
+                "price": 3900,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 1.32
+                "annual_return": 1.83
             },
             {
                 "name": "Северсталь (ПАО)ао",
                 "ticker": "CHMF",
-                "price": 989,
+                "price": 1028.8,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 2.03,
                     "frequency": 1
                 },
-                "annual_return": 0.21
+                "annual_return": 0.2
             },
             {
                 "name": "АФК \"Система\" ПАО ао",
                 "ticker": "AFKS",
-                "price": 14.295,
+                "price": 15.113,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 2.06,
                     "frequency": 1
                 },
-                "annual_return": 14.41
+                "annual_return": 13.63
             },
             {
                 "name": "ГДР FixPrice Group PLC ORD SHS",
                 "ticker": "FIXP",
-                "price": 151.8,
+                "price": 156.8,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 2.93
+                "annual_return": 3.91
             },
             {
                 "name": "ГАЗ ПАО ао",
                 "ticker": "GAZA",
-                "price": 640,
+                "price": 664,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.84
+                "annual_return": 1.37
             },
             {
                 "name": "Группа Астра ао",
                 "ticker": "ASTR",
-                "price": 387.15,
+                "price": 393.4,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
-                },
-                "annual_return": 2.84
-            },
-            {
-                "name": "ЕвроТранс ао",
-                "ticker": "EUTR",
-                "price": 120.1,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 3.54
-            },
-            {
-                "name": "Группа Аренадата",
-                "ticker": "DATA",
-                "price": 126.5,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 2.56
-            },
-            {
-                "name": "\"ДЭК\" ПАО ао",
-                "ticker": "DVEC",
-                "price": 2.17,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.84
-            },
-            {
-                "name": "ДВ морское пароходство ПАО ао",
-                "ticker": "FESH",
-                "price": 60.1,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.3
-            },
-            {
-                "name": "МКПАО ЭН+ ГРУП ао",
-                "ticker": "ENPG",
-                "price": 387,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.4
-            },
-            {
-                "name": "Банк Санкт-Петербург ап",
-                "ticker": "BSPBP",
-                "price": 59.05,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 6.31
-            },
-            {
-                "name": "Бурятзолото ПАО ао",
-                "ticker": "BRZL",
-                "price": 1797,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.47
-            },
-            {
-                "name": "\"ЧМК\" ПАО ао",
-                "ticker": "CHMK",
-                "price": 5135,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 8.6
-            },
-            {
-                "name": "\"Центральный Телеграф\" ПАО ао",
-                "ticker": "CNTL",
-                "price": 10.06,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 3.19
-            },
-            {
-                "name": "Элемент",
-                "ticker": "ELMT",
-                "price": 0.1321,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.62
-            },
-            {
-                "name": "Совкомфлот ао",
-                "ticker": "FLOT",
-                "price": 81.51,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.3
-            },
-            {
-                "name": "Каршеринг Руссия ао",
-                "ticker": "DELI",
-                "price": 159.8,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.33
-            },
-            {
-                "name": "Башинформсвязь(ПАО) ап",
-                "ticker": "BISVP",
-                "price": 8.8,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.55
-            },
-            {
-                "name": "ГДР ETALON GROUP PLC ORD SHS",
-                "ticker": "ETLN",
-                "price": 56.2,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.03
-            },
-            {
-                "name": "ПАО \"Артген\"",
-                "ticker": "ABIO",
-                "price": 80.72,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 3.27
-            },
-            {
-                "name": "Завод ДИОД ПАО ао",
-                "ticker": "DIOD",
-                "price": 10.78,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 2.95
-            },
-            {
-                "name": "\"МКБ\" ПАО ао",
-                "ticker": "CBOM",
-                "price": 7.213,
-                "is_divids": "Да",
-                "dividend": {
-                    "yield": 0.11,
-                    "frequency": 1
                 },
                 "annual_return": 1.53
             },
             {
-                "name": "ПАО ИНАРКТИКА",
-                "ticker": "AQUA",
-                "price": 632,
+                "name": "ЕвроТранс ао",
+                "ticker": "EUTR",
+                "price": 127.25,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.09
+                "annual_return": 4.25
             },
             {
-                "name": "Донской завод радиодеталей ап",
-                "ticker": "DZRDP",
-                "price": 2500,
+                "name": "Группа Аренадата",
+                "ticker": "DATA",
+                "price": 127.42,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 5.62
+                "annual_return": 3.37
             },
             {
-                "name": "\"ЕвропЭлектротехника\" ПАО ао",
-                "ticker": "EELT",
-                "price": 10.96,
+                "name": "\"ДЭК\" ПАО ао",
+                "ticker": "DVEC",
+                "price": 2.234,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.93
+                "annual_return": 4.08
             },
             {
-                "name": "Аэрофлот-росс.авиалин(ПАО)ао",
-                "ticker": "AFLT",
-                "price": 67.94,
-                "is_divids": "Да",
-                "dividend": {
-                    "yield": 2.5,
-                    "frequency": 1
-                },
-                "annual_return": 3.68
-            },
-            {
-                "name": "\"Астраханская ЭСК\" ПАО",
-                "ticker": "ASSB",
-                "price": 1.8,
+                "name": "ДВ морское пароходство ПАО ао",
+                "ticker": "FESH",
+                "price": 61.56,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.44
+                "annual_return": 3.4
             },
             {
-                "name": "ПАО \"Банк \"Санкт-Петербург\" ао",
-                "ticker": "BSPB",
-                "price": 377.65,
+                "name": "МКПАО ЭН+ ГРУП ао",
+                "ticker": "ENPG",
+                "price": 401.4,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.34
+            },
+            {
+                "name": "Банк Санкт-Петербург ап",
+                "ticker": "BSPBP",
+                "price": 65.3,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 5.02
+            },
+            {
+                "name": "Бурятзолото ПАО ао",
+                "ticker": "BRZL",
+                "price": 1780,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.92
+            },
+            {
+                "name": "\"ЧМК\" ПАО ао",
+                "ticker": "CHMK",
+                "price": 5150,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 4.54
+            },
+            {
+                "name": "\"Центральный Телеграф\" ПАО ао",
+                "ticker": "CNTL",
+                "price": 10.36,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.32
+            },
+            {
+                "name": "Элемент",
+                "ticker": "ELMT",
+                "price": 0.1343,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.09
+            },
+            {
+                "name": "Совкомфлот ао",
+                "ticker": "FLOT",
+                "price": 83.28,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.76
+            },
+            {
+                "name": "Каршеринг Руссия ао",
+                "ticker": "DELI",
+                "price": 162.05,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
@@ -2168,70 +2036,191 @@
                 "annual_return": 3.05
             },
             {
-                "name": "\"Центральный Телеграф\" ПАО ап",
-                "ticker": "CNTLP",
-                "price": 7.18,
+                "name": "Башинформсвязь(ПАО) ап",
+                "ticker": "BISVP",
+                "price": 9.14,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.93
+                "annual_return": 1.54
+            },
+            {
+                "name": "ГДР ETALON GROUP PLC ORD SHS",
+                "ticker": "ETLN",
+                "price": 58.32,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.48
+            },
+            {
+                "name": "ПАО \"Артген\"",
+                "ticker": "ABIO",
+                "price": 81.24,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.45
+            },
+            {
+                "name": "Завод ДИОД ПАО ао",
+                "ticker": "DIOD",
+                "price": 10.91,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.84
+            },
+            {
+                "name": "\"МКБ\" ПАО ао",
+                "ticker": "CBOM",
+                "price": 7.433,
+                "is_divids": "Да",
+                "dividend": {
+                    "yield": 0.11,
+                    "frequency": 1
+                },
+                "annual_return": 1.48
+            },
+            {
+                "name": "ПАО ИНАРКТИКА",
+                "ticker": "AQUA",
+                "price": 645.5,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.79
+            },
+            {
+                "name": "Донской завод радиодеталей ап",
+                "ticker": "DZRDP",
+                "price": 2550,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.0
+            },
+            {
+                "name": "\"ЕвропЭлектротехника\" ПАО ао",
+                "ticker": "EELT",
+                "price": 11.14,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 5.54
+            },
+            {
+                "name": "Аэрофлот-росс.авиалин(ПАО)ао",
+                "ticker": "AFLT",
+                "price": 69.99,
+                "is_divids": "Да",
+                "dividend": {
+                    "yield": 2.5,
+                    "frequency": 1
+                },
+                "annual_return": 3.57
+            },
+            {
+                "name": "\"Астраханская ЭСК\" ПАО",
+                "ticker": "ASSB",
+                "price": 1.82,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.23
+            },
+            {
+                "name": "ПАО \"Банк \"Санкт-Петербург\" ао",
+                "ticker": "BSPB",
+                "price": 371.7,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.96
+            },
+            {
+                "name": "\"Центральный Телеграф\" ПАО ап",
+                "ticker": "CNTLP",
+                "price": 7.48,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.44
             },
             {
                 "name": "Башнефть АНК ап",
                 "ticker": "BANEP",
-                "price": 1120,
+                "price": 1140.5,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 199,
                     "frequency": 1
                 },
-                "annual_return": 17.77
+                "annual_return": 17.45
             },
             {
                 "name": "МКПАО \"ЦИАН\"",
                 "ticker": "CNRU",
-                "price": 529,
+                "price": 541,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 2.01
+                "annual_return": 5.22
             },
             {
                 "name": "ПАО \"Аптечная сеть 36,6\" ао",
                 "ticker": "APTK",
-                "price": 9.892,
+                "price": 10.05,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.45
+                "annual_return": 1.84
             },
             {
                 "name": "\"ЧКПЗ\" ПАО ао",
                 "ticker": "CHKZ",
-                "price": 17100,
+                "price": 17450,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 1.18
+                "annual_return": 0.0
             },
             {
                 "name": "\"ФСК - Россети\" ПАО",
                 "ticker": "FEES",
-                "price": 0.0672,
+                "price": 0.06838,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 0,
                     "frequency": 1
                 },
-                "annual_return": 3.98
+                "annual_return": 2.28
             },
             {
                 "name": "ГДР ROS AGRO PLC ORD SHS",
@@ -2247,57 +2236,57 @@
             {
                 "name": "УК Арсагера ПАО-ао",
                 "ticker": "ARSA",
-                "price": 10.86,
+                "price": 10.98,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 0.83
+                "annual_return": 1.1
             },
             {
                 "name": "Белон ОАО ао",
                 "ticker": "BLNG",
-                "price": 13.59,
+                "price": 13.86,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 7.21
+                "annual_return": 4.11
             },
             {
                 "name": "СТГ ао",
                 "ticker": "CARM",
-                "price": 1.439,
+                "price": 1.4995,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.2
+                "annual_return": 2.83
             },
             {
                 "name": "РН-Западная Сибирь ПАО ао",
                 "ticker": "CHGZ",
-                "price": 85.4,
+                "price": 90.4,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 5.41
+                "annual_return": 3.79
             },
             {
                 "name": "\"ЭЛ5-Энерго\" ПАО",
                 "ticker": "ELFV",
-                "price": 0.4904,
+                "price": 0.4968,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 2.26
+                "annual_return": 2.08
             },
             {
                 "name": "Ашинский метзавод ПАО ао",
@@ -2313,337 +2302,238 @@
             {
                 "name": "Абрау-Дюрсо ПАО ао",
                 "ticker": "ABRD",
-                "price": 172.6,
+                "price": 187.2,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.98
+                "annual_return": 5.9
             },
             {
                 "name": "НоваБев Групп ПАО ао",
                 "ticker": "BELU",
-                "price": 468.5,
+                "price": 474.5,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.22
+                "annual_return": 1.6
             },
             {
                 "name": "АКБ \"АВАНГАРД\" ПАО ао",
                 "ticker": "AVAN",
-                "price": 700,
+                "price": 692,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.9
+                "annual_return": 1.88
             },
             {
                 "name": "АПРИ",
                 "ticker": "APRI",
-                "price": 13.07,
+                "price": 13.118,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 0.37
+                "annual_return": 0.23
+            },
+            {
+                "name": null,
+                "ticker": "ALRS",
+                "price": null,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": null
             },
             {
                 "name": "Диасофт ао",
                 "ticker": "DIAS",
-                "price": 3187.5,
+                "price": 3224,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.74
+                "annual_return": 3.21
             },
             {
                 "name": "Донской завод радиодеталей ао",
                 "ticker": "DZRD",
-                "price": 3800,
+                "price": 3900,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 1.32
+                "annual_return": 1.83
             },
             {
                 "name": "ГДР FixPrice Group PLC ORD SHS",
                 "ticker": "FIXP",
-                "price": 151.8,
+                "price": 156.8,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 2.93
+                "annual_return": 3.91
             },
             {
                 "name": "ГАЗ ПАО ао",
                 "ticker": "GAZA",
-                "price": 640,
+                "price": 664,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.84
+                "annual_return": 1.37
             },
             {
                 "name": "Группа Астра ао",
                 "ticker": "ASTR",
-                "price": 387.15,
+                "price": 393.4,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
-                },
-                "annual_return": 2.84
-            },
-            {
-                "name": "ЕвроТранс ао",
-                "ticker": "EUTR",
-                "price": 120.1,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 3.54
-            },
-            {
-                "name": "Группа Аренадата",
-                "ticker": "DATA",
-                "price": 126.5,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 2.56
-            },
-            {
-                "name": "\"ДЭК\" ПАО ао",
-                "ticker": "DVEC",
-                "price": 2.17,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.84
-            },
-            {
-                "name": "ДВ морское пароходство ПАО ао",
-                "ticker": "FESH",
-                "price": 60.1,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.3
-            },
-            {
-                "name": "МКПАО ЭН+ ГРУП ао",
-                "ticker": "ENPG",
-                "price": 387,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.4
-            },
-            {
-                "name": "Банк Санкт-Петербург ап",
-                "ticker": "BSPBP",
-                "price": 59.05,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 6.31
-            },
-            {
-                "name": "Бурятзолото ПАО ао",
-                "ticker": "BRZL",
-                "price": 1797,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.47
-            },
-            {
-                "name": "\"ЧМК\" ПАО ао",
-                "ticker": "CHMK",
-                "price": 5135,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 8.6
-            },
-            {
-                "name": "\"Центральный Телеграф\" ПАО ао",
-                "ticker": "CNTL",
-                "price": 10.06,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 3.19
-            },
-            {
-                "name": "Элемент",
-                "ticker": "ELMT",
-                "price": 0.1321,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.62
-            },
-            {
-                "name": "Совкомфлот ао",
-                "ticker": "FLOT",
-                "price": 81.51,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.3
-            },
-            {
-                "name": "Каршеринг Руссия ао",
-                "ticker": "DELI",
-                "price": 159.8,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.33
-            },
-            {
-                "name": "Башинформсвязь(ПАО) ап",
-                "ticker": "BISVP",
-                "price": 8.8,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 4.55
-            },
-            {
-                "name": "ГДР ETALON GROUP PLC ORD SHS",
-                "ticker": "ETLN",
-                "price": 56.2,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 5.03
-            },
-            {
-                "name": "ПАО \"Артген\"",
-                "ticker": "ABIO",
-                "price": 80.72,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 3.27
-            },
-            {
-                "name": "Завод ДИОД ПАО ао",
-                "ticker": "DIOD",
-                "price": 10.78,
-                "is_divids": "Нет",
-                "dividend": {
-                    "yield": 0.0,
-                    "frequency": 0
-                },
-                "annual_return": 2.95
-            },
-            {
-                "name": "\"МКБ\" ПАО ао",
-                "ticker": "CBOM",
-                "price": 7.213,
-                "is_divids": "Да",
-                "dividend": {
-                    "yield": 0.11,
-                    "frequency": 1
                 },
                 "annual_return": 1.53
             },
             {
-                "name": "ПАО ИНАРКТИКА",
-                "ticker": "AQUA",
-                "price": 632,
+                "name": "ЕвроТранс ао",
+                "ticker": "EUTR",
+                "price": 127.25,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.09
+                "annual_return": 4.25
             },
             {
-                "name": "Донской завод радиодеталей ап",
-                "ticker": "DZRDP",
-                "price": 2500,
+                "name": "Группа Аренадата",
+                "ticker": "DATA",
+                "price": 127.42,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 5.62
+                "annual_return": 3.37
             },
             {
-                "name": "\"ЕвропЭлектротехника\" ПАО ао",
-                "ticker": "EELT",
-                "price": 10.96,
+                "name": "\"ДЭК\" ПАО ао",
+                "ticker": "DVEC",
+                "price": 2.234,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.93
+                "annual_return": 4.08
             },
             {
-                "name": "\"Астраханская ЭСК\" ПАО",
-                "ticker": "ASSB",
-                "price": 1.8,
+                "name": "ДВ морское пароходство ПАО ао",
+                "ticker": "FESH",
+                "price": 61.56,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.44
+                "annual_return": 3.4
             },
             {
-                "name": "ПАО \"Банк \"Санкт-Петербург\" ао",
-                "ticker": "BSPB",
-                "price": 377.65,
+                "name": "МКПАО ЭН+ ГРУП ао",
+                "ticker": "ENPG",
+                "price": 401.4,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.34
+            },
+            {
+                "name": "Банк Санкт-Петербург ап",
+                "ticker": "BSPBP",
+                "price": 65.3,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 5.02
+            },
+            {
+                "name": "Бурятзолото ПАО ао",
+                "ticker": "BRZL",
+                "price": 1780,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.92
+            },
+            {
+                "name": "\"ЧМК\" ПАО ао",
+                "ticker": "CHMK",
+                "price": 5150,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 4.54
+            },
+            {
+                "name": "\"Центральный Телеграф\" ПАО ао",
+                "ticker": "CNTL",
+                "price": 10.36,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.32
+            },
+            {
+                "name": "Элемент",
+                "ticker": "ELMT",
+                "price": 0.1343,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.09
+            },
+            {
+                "name": "Совкомфлот ао",
+                "ticker": "FLOT",
+                "price": 83.28,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.76
+            },
+            {
+                "name": "Каршеринг Руссия ао",
+                "ticker": "DELI",
+                "price": 162.05,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
@@ -2652,59 +2542,169 @@
                 "annual_return": 3.05
             },
             {
-                "name": "\"Центральный Телеграф\" ПАО ап",
-                "ticker": "CNTLP",
-                "price": 7.18,
+                "name": "Башинформсвязь(ПАО) ап",
+                "ticker": "BISVP",
+                "price": 9.14,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 3.93
+                "annual_return": 1.54
+            },
+            {
+                "name": "ГДР ETALON GROUP PLC ORD SHS",
+                "ticker": "ETLN",
+                "price": 58.32,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.48
+            },
+            {
+                "name": "ПАО \"Артген\"",
+                "ticker": "ABIO",
+                "price": 81.24,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.45
+            },
+            {
+                "name": "Завод ДИОД ПАО ао",
+                "ticker": "DIOD",
+                "price": 10.91,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.84
+            },
+            {
+                "name": "\"МКБ\" ПАО ао",
+                "ticker": "CBOM",
+                "price": 7.433,
+                "is_divids": "Да",
+                "dividend": {
+                    "yield": 0.11,
+                    "frequency": 1
+                },
+                "annual_return": 1.48
+            },
+            {
+                "name": "ПАО ИНАРКТИКА",
+                "ticker": "AQUA",
+                "price": 645.5,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.79
+            },
+            {
+                "name": "Донской завод радиодеталей ап",
+                "ticker": "DZRDP",
+                "price": 2550,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.0
+            },
+            {
+                "name": "\"ЕвропЭлектротехника\" ПАО ао",
+                "ticker": "EELT",
+                "price": 11.14,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 5.54
+            },
+            {
+                "name": "\"Астраханская ЭСК\" ПАО",
+                "ticker": "ASSB",
+                "price": 1.82,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.23
+            },
+            {
+                "name": "ПАО \"Банк \"Санкт-Петербург\" ао",
+                "ticker": "BSPB",
+                "price": 371.7,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 1.96
+            },
+            {
+                "name": "\"Центральный Телеграф\" ПАО ап",
+                "ticker": "CNTLP",
+                "price": 7.48,
+                "is_divids": "Нет",
+                "dividend": {
+                    "yield": 0.0,
+                    "frequency": 0
+                },
+                "annual_return": 2.44
             },
             {
                 "name": "МКПАО \"ЦИАН\"",
                 "ticker": "CNRU",
-                "price": 529,
+                "price": 541,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 2.01
+                "annual_return": 5.22
             },
             {
                 "name": "ПАО \"Аптечная сеть 36,6\" ао",
                 "ticker": "APTK",
-                "price": 9.892,
+                "price": 10.05,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.45
+                "annual_return": 1.84
             },
             {
                 "name": "\"ЧКПЗ\" ПАО ао",
                 "ticker": "CHKZ",
-                "price": 17100,
+                "price": 17450,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 1.18
+                "annual_return": 0.0
             },
             {
                 "name": "\"ФСК - Россети\" ПАО",
                 "ticker": "FEES",
-                "price": 0.0672,
+                "price": 0.06838,
                 "is_divids": "Да",
                 "dividend": {
                     "yield": 0,
                     "frequency": 1
                 },
-                "annual_return": 3.98
+                "annual_return": 2.28
             },
             {
                 "name": "ГДР ROS AGRO PLC ORD SHS",
@@ -2720,46 +2720,46 @@
             {
                 "name": "УК Арсагера ПАО-ао",
                 "ticker": "ARSA",
-                "price": 10.86,
+                "price": 10.98,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 0.83
+                "annual_return": 1.1
             },
             {
                 "name": "Белон ОАО ао",
                 "ticker": "BLNG",
-                "price": 13.59,
+                "price": 13.86,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 7.21
+                "annual_return": 4.11
             },
             {
                 "name": "СТГ ао",
                 "ticker": "CARM",
-                "price": 1.439,
+                "price": 1.4995,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 4.2
+                "annual_return": 2.83
             },
             {
                 "name": "РН-Западная Сибирь ПАО ао",
                 "ticker": "CHGZ",
-                "price": 85.4,
+                "price": 90.4,
                 "is_divids": "Нет",
                 "dividend": {
                     "yield": 0.0,
                     "frequency": 0
                 },
-                "annual_return": 5.41
+                "annual_return": 3.79
             }
         ]
     }

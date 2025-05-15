@@ -67,7 +67,7 @@ def get_bond_data(ticker):
 
             bond_info['Дата погашения'] = bond_info['Дата погашения'] or extract(r"Дата погашения\s*(\d{2}-\d{2}-\d{4})", str)
             bond_info['Размер купона'] = bond_info['Размер купона'] or extract(r"Купон, руб \(\?\)\s*([\d,.]+)")
-            bond_info['Частота выплат купонов в год'] = bond_info['Частота выплат купонов в год'] or extract(r"Частота купона, раз в год\s*([\d,.]+)", float)
+            bond_info['Частота выплат купонов в год'] = round(bond_info['Частота выплат купонов в год'] or extract(r"Частота купона, раз в год\s*([\d,.]+)", float))
             bond_info['Доходность к погашению (%)'] = bond_info['Доходность к погашению (%)'] or extract(r"Доходность\* облигации к погашению составляет\s*([\d,.]+)", float)
             bond_info['Текущая цена'] = bond_info['Текущая цена'] or extract(r"Облигация .*? стоит сейчас\s*([\d,.]+)", float)
     except Exception as e:
