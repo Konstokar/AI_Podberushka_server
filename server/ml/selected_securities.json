@@ -2,14 +2,47 @@
     "Bonds": [
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26242RMFS6",
+            "ticker": "SU26207RMFS9",
             "coupon": {
-                "size": 44.88,
+                "size": 40.64,
                 "frequency_per_year": 2
             },
-            "maturity_date": "29-08-2029",
-            "annual_return": 16.09,
-            "price": 801.5
+            "maturity_date": "03-02-2027",
+            "annual_return": 16.93,
+            "price": 884.7
+        },
+        {
+            "name": "ОФЗ-ПД",
+            "ticker": "SU26225RMFS1",
+            "coupon": {
+                "size": 36.15,
+                "frequency_per_year": 2
+            },
+            "maturity_date": "10-05-2034",
+            "annual_return": 15.63,
+            "price": 622.9
+        },
+        {
+            "name": "ОФЗ-ПД",
+            "ticker": "SU26221RMFS0",
+            "coupon": {
+                "size": 38.39,
+                "frequency_per_year": 2
+            },
+            "maturity_date": "23-03-2033",
+            "annual_return": 15.62,
+            "price": 668.4
+        },
+        {
+            "name": "ОФЗ-ПД",
+            "ticker": "SU26218RMFS6",
+            "coupon": {
+                "size": 42.38,
+                "frequency_per_year": 2
+            },
+            "maturity_date": "17-09-2031",
+            "annual_return": 15.6,
+            "price": 739.5
         },
         {
             "name": "ОФЗ-АД",
@@ -23,95 +56,173 @@
             "price": 1.0
         },
         {
-            "name": "ОФЗ-ПД",
-            "ticker": "SU26233RMFS5",
+            "name": "ОФЗ-ПК",
+            "ticker": "SU29021RMFS1",
             "coupon": {
-                "size": 30.42,
-                "frequency_per_year": 2
+                "size": 52.58,
+                "frequency_per_year": 4
             },
-            "maturity_date": "18-07-2035",
-            "annual_return": 15.63,
-            "price": 540.5
+            "maturity_date": "27-11-2030",
+            "annual_return": 22.11,
+            "price": 967.0
         },
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26243RMFS4",
+            "ticker": "SU26219RMFS4",
             "coupon": {
-                "size": 48.87,
+                "size": 38.64,
                 "frequency_per_year": 2
             },
-            "maturity_date": "19-05-2038",
-            "annual_return": 16.14,
-            "price": 683.5
+            "maturity_date": "16-09-2026",
+            "annual_return": 17.27,
+            "price": 900.7
         },
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26207RMFS9",
+            "ticker": "SU26229RMFS3",
             "coupon": {
-                "size": 40.64,
+                "size": 35.65,
                 "frequency_per_year": 2
             },
-            "maturity_date": "03-02-2027",
-            "annual_return": 17.5,
-            "price": 874.9
+            "maturity_date": "12-11-2025",
+            "annual_return": 18.44,
+            "price": 956.5
         },
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26228RMFS5",
+            "ticker": "SU26240RMFS0",
             "coupon": {
-                "size": 38.15,
+                "size": 34.9,
                 "frequency_per_year": 2
             },
-            "maturity_date": "10-04-2030",
-            "annual_return": 16.06,
-            "price": 737.9
+            "maturity_date": "30-07-2036",
+            "annual_return": 15.35,
+            "price": 579.7
         },
         {
             "name": "ОФЗ-ПД",
-            "ticker": "SU26236RMFS8",
+            "ticker": "SU26235RMFS0",
             "coupon": {
-                "size": 28.42,
+                "size": 29.42,
                 "frequency_per_year": 2
             },
-            "maturity_date": "17-05-2028",
-            "annual_return": 16.43,
-            "price": 765.4
-        },
-        {
-            "name": "ОФЗ-ПД",
-            "ticker": "SU26230RMFS1",
-            "coupon": {
-                "size": 38.39,
-                "frequency_per_year": 2
-            },
-            "maturity_date": "16-03-2039",
-            "annual_return": 15.48,
-            "price": 581.7
-        },
-        {
-            "name": "ОФЗ-ПД",
-            "ticker": "SU26244RMFS2",
-            "coupon": {
-                "size": 56.1,
-                "frequency_per_year": 2
-            },
-            "maturity_date": "15-03-2034",
-            "annual_return": 15.95,
-            "price": 804.5
-        },
-        {
-            "name": "ОФЗ-ПД",
-            "ticker": "SU26212RMFS9",
-            "coupon": {
-                "size": 35.15,
-                "frequency_per_year": 2
-            },
-            "maturity_date": "19-01-2028",
-            "annual_return": 16.84,
-            "price": 807.2
+            "maturity_date": "12-03-2031",
+            "annual_return": 15.64,
+            "price": 654.0
         }
     ],
-    "Stocks": [],
-    "risk_category": "Низкий",
-    "expected_return": 16.31
+    "Stocks": [
+        {
+            "name": "Аэрофлот-росс.авиалин(ПАО)ао",
+            "ticker": "AFLT",
+            "price": 66.6,
+            "is_divids": "Да",
+            "dividend": {
+                "yield": 2.5,
+                "frequency": 1
+            },
+            "annual_return": 3.75
+        },
+        {
+            "name": "Акрон ПАО ао",
+            "ticker": "AKRN",
+            "price": 16096,
+            "is_divids": "Да",
+            "dividend": {
+                "yield": 152,
+                "frequency": 1
+            },
+            "annual_return": 0.94
+        },
+        {
+            "name": "НоваБев Групп ПАО ао",
+            "ticker": "BELU",
+            "price": 452.5,
+            "is_divids": "Нет",
+            "dividend": {
+                "yield": 0.0,
+                "frequency": 0
+            },
+            "annual_return": 2.89
+        },
+        {
+            "name": "Северсталь (ПАО)ао",
+            "ticker": "CHMF",
+            "price": 979.4,
+            "is_divids": "Да",
+            "dividend": {
+                "yield": 2.03,
+                "frequency": 1
+            },
+            "annual_return": 0.21
+        },
+        {
+            "name": "Акрон ПАО ао",
+            "ticker": "AKRN",
+            "price": 16096,
+            "is_divids": "Да",
+            "dividend": {
+                "yield": 152,
+                "frequency": 1
+            },
+            "annual_return": 0.94
+        },
+        {
+            "name": "АФК \"Система\" ПАО ао",
+            "ticker": "AFKS",
+            "price": 15.241,
+            "is_divids": "Да",
+            "dividend": {
+                "yield": 2.06,
+                "frequency": 1
+            },
+            "annual_return": 13.52
+        },
+        {
+            "name": "АЛРОСА ПАО ао",
+            "ticker": "ALRS",
+            "price": 45.09,
+            "is_divids": "Да",
+            "dividend": {
+                "yield": 1.47,
+                "frequency": 1
+            },
+            "annual_return": 3.26
+        },
+        {
+            "name": "ДВ морское пароходство ПАО ао",
+            "ticker": "FESH",
+            "price": 57.64,
+            "is_divids": "Нет",
+            "dividend": {
+                "yield": 0.0,
+                "frequency": 0
+            },
+            "annual_return": 3.51
+        },
+        {
+            "name": "Диасофт ао",
+            "ticker": "DIAS",
+            "price": 3113,
+            "is_divids": "Нет",
+            "dividend": {
+                "yield": 0.0,
+                "frequency": 0
+            },
+            "annual_return": 2.54
+        },
+        {
+            "name": "Башнефть АНК ао",
+            "ticker": "BANE",
+            "price": 1799,
+            "is_divids": "Да",
+            "dividend": {
+                "yield": 199,
+                "frequency": 1
+            },
+            "annual_return": 11.06
+        }
+    ],
+    "risk_category": "Средний",
+    "expected_return": 3.96
 }
